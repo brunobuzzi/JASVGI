@@ -1,4 +1,4 @@
 draw
 drawOn: aJASVGICanvas
 
-	aJASVGICanvas tag: self tagName attributes: self asSvgAttributes
+	aJASVGICanvas tag: self svgTag attributes: self asSvgAttributes

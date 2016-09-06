@@ -1,4 +1,4 @@
 draw
 getGlobalId
 
-	^self tagName, '.', self id
+	^self svgTag , '.', self id

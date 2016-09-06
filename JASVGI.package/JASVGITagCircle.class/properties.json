@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"id",
-		"attributes",
-		"subTags" ],
-	"name" : "JASVGITagElement",
+		 ],
+	"name" : "JASVGITagCircle",
 	"pools" : [
 		 ],
-	"super" : "JASVGIObject",
+	"super" : "JASVGITagFigure",
 	"type" : "normal" }

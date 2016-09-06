@@ -7,7 +7,7 @@ drawText: aString at: aPoint id: id
 		add: (JASVGIAttribute name: 'y' value: aPoint y);
 		yourself.
 
-	svgFigureTag := JASVGITagText id: id name: 'text' withAll: attributes.
+	svgFigureTag := JASVGITagText id: id withAll: attributes.
 	svgFigureTag text: aString.
 
 	^self draw: svgFigureTag

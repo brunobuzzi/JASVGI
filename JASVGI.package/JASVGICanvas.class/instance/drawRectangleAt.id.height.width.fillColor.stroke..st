@@ -11,6 +11,6 @@ drawRectangleAt: aPoint id: id height: height width: width fillColor: fillColor 
 		add: (JASVGIAttribute name: 'stroke' value: stroke);
 		yourself.
 
-	svgFigureTag := JASVGITagFigure id: id name: 'rect' withAll: attributes.
+	svgFigureTag := JASVGITagRectangle id: id withAll: attributes.
 
 	^self draw: svgFigureTag

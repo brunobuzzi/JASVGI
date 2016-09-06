@@ -1,4 +1,4 @@
 other
 drawOn: aJASVGICanvas
 
-	aJASVGICanvas tag: self tagName attributes: self asSvgAttributes with: text
+	aJASVGICanvas tag: self svgTag attributes: self asSvgAttributes with: text
