@@ -1,4 +1,0 @@
-other
-hasValue
-
-	^value notNil

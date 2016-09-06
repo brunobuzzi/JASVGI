@@ -6,9 +6,6 @@ contents
 			svgFigureTag := svgObjects at: key.
 			figureName := (key subStrings: '.') first.
 			svgFigureTag drawOn: self.
-			svgFigureTag hasValue
-			ifTrue: [xmlCanvas tag: figureName attributes: svgFigureTag asSvgAttributes with: svgFigureTag value] 
-			ifFalse: [xmlCanvas tag: figureName attributes: svgFigureTag asSvgAttributes].
 		].
 	].
 
