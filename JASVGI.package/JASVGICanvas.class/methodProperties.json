@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addMarker:" : "BrunoBB 09/06/2016 14:52",
 		"contents" : "BrunoBB 09/06/2016 14:36",
 		"draw:" : "BrunoBB 09/06/2016 13:17",
 		"drawRectangleAt:height:width:fillColor:stroke:" : "BrunoBB 09/06/2016 11:11",

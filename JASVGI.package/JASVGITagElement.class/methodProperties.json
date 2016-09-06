@@ -1,6 +1,9 @@
 {
 	"class" : {
-		 },
+		"id:name:withAll:" : "BrunoBB 09/06/2016 15:17",
+		"id:withAll:" : "BrunoBB 09/06/2016 15:17",
+		"name:withAll:" : "BrunoBB 09/06/2016 15:17",
+		"withAll:" : "BrunoBB 09/06/2016 15:17" },
 	"instance" : {
 		"add:" : "BrunoBB 09/06/2016 11:03",
 		"addAll:" : "BrunoBB 09/06/2016 11:03",
@@ -13,7 +16,8 @@
 		"hasSubTags" : "BrunoBB 09/06/2016 11:03",
 		"id" : "BrunoBB 09/06/2016 11:07",
 		"id:" : "BrunoBB 09/06/2016 11:07",
-		"initialize" : "BrunoBB 09/06/2016 11:06",
+		"initialize" : "BrunoBB 09/06/2016 15:15",
+		"setAttributes:" : "BrunoBB 09/06/2016 15:16",
 		"subTags" : "BrunoBB 09/06/2016 11:03",
 		"subTags:" : "BrunoBB 09/06/2016 11:03",
 		"tagName" : "BrunoBB 09/06/2016 11:03",

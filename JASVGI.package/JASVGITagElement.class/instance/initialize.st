@@ -3,5 +3,5 @@ initialize
 
 	super initialize.
 
-	attributes := OrderedCollection new.
+	attributes := Dictionary new.
 	subTags := Dictionary new.
