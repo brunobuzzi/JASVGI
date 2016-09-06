@@ -1,0 +1,4 @@
+other
+hasValue
+
+	^value notNil

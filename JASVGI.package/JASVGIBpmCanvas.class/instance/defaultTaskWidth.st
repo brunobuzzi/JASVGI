@@ -1,0 +1,4 @@
+other
+defaultTaskWidth
+
+	^120

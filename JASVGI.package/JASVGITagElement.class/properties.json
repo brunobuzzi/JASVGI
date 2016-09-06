@@ -1,0 +1,17 @@
+{
+	"category" : "JASVGI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"id",
+		"tagName",
+		"attributes",
+		"subTags" ],
+	"name" : "JASVGITagElement",
+	"pools" : [
+		 ],
+	"super" : "JASVGIObject",
+	"type" : "normal" }

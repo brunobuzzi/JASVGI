@@ -1,0 +1,4 @@
+other
+hasSubTags
+
+	^subTags notEmpty

@@ -1,0 +1,17 @@
+{
+	"category" : "JASVGI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"xmlCanvas",
+		"svgTag",
+		"svgObjects",
+		"svgMarkers" ],
+	"name" : "JASVGICanvas",
+	"pools" : [
+		 ],
+	"super" : "JASVGIObject",
+	"type" : "normal" }

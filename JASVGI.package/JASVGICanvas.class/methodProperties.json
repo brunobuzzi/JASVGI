@@ -1,0 +1,23 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"contents" : "BrunoBB 09/06/2016 13:59",
+		"draw:" : "BrunoBB 09/06/2016 13:17",
+		"drawRectangleAt:height:width:fillColor:stroke:" : "BrunoBB 09/06/2016 11:11",
+		"drawRectangleAt:id:height:width:fillColor:stroke:" : "BrunoBB 09/06/2016 13:18",
+		"drawRoundRectangleAt:height:width:fillColor:stroke:" : "BrunoBB 09/06/2016 11:11",
+		"drawRoundRectangleAt:id:height:width:fillColor:stroke:" : "BrunoBB 09/06/2016 13:18",
+		"drawText:at:" : "BrunoBB 09/06/2016 11:11",
+		"drawText:at:id:" : "BrunoBB 09/06/2016 13:18",
+		"initialize" : "BrunoBB 09/06/2016 11:12",
+		"svgMarkers" : "BrunoBB 09/06/2016 11:12",
+		"svgMarkers:" : "BrunoBB 09/06/2016 11:12",
+		"svgObjects" : "BrunoBB 09/06/2016 11:11",
+		"svgObjects:" : "BrunoBB 09/06/2016 11:11",
+		"svgTag" : "BrunoBB 09/06/2016 11:11",
+		"svgTag:" : "BrunoBB 09/06/2016 11:11",
+		"tag:attributes:" : "BrunoBB 09/06/2016 14:02",
+		"tag:attributes:with:" : "BrunoBB 09/06/2016 14:02",
+		"xmlCanvas" : "BrunoBB 09/06/2016 11:11",
+		"xmlCanvas:" : "BrunoBB 09/06/2016 11:11" } }

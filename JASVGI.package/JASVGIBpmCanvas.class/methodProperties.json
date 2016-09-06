@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"defaultTaskFillColor" : "BrunoBB 09/06/2016 10:21",
+		"defaultTaskHeight" : "BrunoBB 09/06/2016 10:21",
+		"defaultTaskStroke" : "BrunoBB 09/06/2016 10:21",
+		"defaultTaskWidth" : "BrunoBB 09/06/2016 10:21",
+		"drawActivityNamed:at:" : "BrunoBB 09/06/2016 13:20",
+		"getJasvgiTagNamed:" : "BrunoBB 09/06/2016 10:26",
+		"getJasvgiTagNamed:ifAbsent:" : "BrunoBB 09/06/2016 10:26",
+		"initialize" : "BrunoBB 09/06/2016 10:21",
+		"namesAndTags" : "BrunoBB 09/06/2016 10:21",
+		"namesAndTags:" : "BrunoBB 09/06/2016 10:21" } }

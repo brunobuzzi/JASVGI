@@ -1,0 +1,14 @@
+{
+	"category" : "JASVGI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "JASVGIObject",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
