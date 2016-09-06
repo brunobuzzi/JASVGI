@@ -1,5 +1,7 @@
 {
 	"class" : {
-		"newCircle" : "BrunoBB 09/06/2016 15:21" },
+		"newCircleAt:width:height:" : "BrunoBB 09/06/2016 15:39" },
 	"instance" : {
+		"figure" : "BrunoBB 09/06/2016 15:39",
+		"figure:" : "BrunoBB 09/06/2016 15:39",
 		"svgTag" : "BrunoBB 09/06/2016 15:27" } }
