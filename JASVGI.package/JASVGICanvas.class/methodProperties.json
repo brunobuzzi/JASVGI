@@ -8,6 +8,8 @@
 		"drawCircleAt:id:r:fillColor:stroke:strokeWidth:" : "BrunoBB 09/07/2016 07:25",
 		"drawCircleAt:r:fillColor:stroke:" : "BrunoBB 09/07/2016 07:26",
 		"drawCircleAt:r:fillColor:stroke:strokeWidth:" : "BrunoBB 09/07/2016 07:26",
+		"drawLineM:" : "BrunoBB 09/07/2016 08:50",
+		"drawLineM:id:" : "BrunoBB 09/07/2016 08:50",
 		"drawRectangleAt:height:width:fillColor:stroke:" : "BrunoBB 09/06/2016 11:11",
 		"drawRectangleAt:id:height:width:fillColor:stroke:" : "BrunoBB 09/07/2016 06:59",
 		"drawRoundRectangleAt:height:width:fillColor:stroke:" : "BrunoBB 09/06/2016 11:11",
