@@ -1,4 +1,4 @@
 other
 isStyleAttribute
 
-	^self class styleAttributesNames includes: attributeName
+	^svgTagElement styleAttributesNames includes: attributeName

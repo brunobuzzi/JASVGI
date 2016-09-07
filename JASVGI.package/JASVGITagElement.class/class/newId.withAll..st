@@ -1,5 +1,5 @@
 other
-id: id withAll: anOrderedCollection
+newId: id withAll: anOrderedCollection
 
 	^super new initialize
 		id: id;

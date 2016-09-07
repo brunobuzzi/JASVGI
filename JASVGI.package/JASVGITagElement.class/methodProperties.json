@@ -1,8 +1,9 @@
 {
 	"class" : {
-		"id:name:withAll:" : "BrunoBB 09/06/2016 15:17",
-		"id:withAll:" : "BrunoBB 09/06/2016 15:17",
 		"name:withAll:" : "BrunoBB 09/06/2016 15:17",
+		"newId:name:withAll:" : "BrunoBB 09/07/2016 06:58",
+		"newId:withAll:" : "BrunoBB 09/07/2016 06:58",
+		"styleAttributesNames" : "BrunoBB 09/07/2016 07:15",
 		"withAll:" : "BrunoBB 09/06/2016 15:17" },
 	"instance" : {
 		"add:" : "BrunoBB 09/06/2016 11:03",
@@ -18,6 +19,7 @@
 		"id:" : "BrunoBB 09/06/2016 11:07",
 		"initialize" : "BrunoBB 09/06/2016 15:15",
 		"setAttributes:" : "BrunoBB 09/06/2016 15:16",
+		"styleAttributesNames" : "BrunoBB 09/07/2016 07:14",
 		"subTags" : "BrunoBB 09/06/2016 11:03",
 		"subTags:" : "BrunoBB 09/06/2016 11:03",
 		"svgTag" : "BrunoBB 09/06/2016 15:30" } }

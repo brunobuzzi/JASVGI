@@ -1,4 +1,4 @@
 other
 addMarker: tagMarker
 
-	^svgMarkers add: tagMarker
+	^svgMarkers at: tagMarker id put: tagMarker
