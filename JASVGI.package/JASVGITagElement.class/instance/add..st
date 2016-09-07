@@ -1,4 +1,4 @@
 other
 add: aJASVGIAttribute
 
-	^attributes add: aJASVGIAttribute
+	^attributes at: aJASVGIAttribute attributeName put: aJASVGIAttribute

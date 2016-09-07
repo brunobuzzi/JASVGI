@@ -4,7 +4,7 @@
 	"instance" : {
 		"addMarker:" : "BrunoBB 09/07/2016 08:10",
 		"contents" : "BrunoBB 09/07/2016 08:09",
-		"draw:" : "BrunoBB 09/06/2016 13:17",
+		"draw:" : "BrunoBB 09/07/2016 09:42",
 		"drawCircleAt:id:r:fillColor:stroke:strokeWidth:" : "BrunoBB 09/07/2016 07:25",
 		"drawCircleAt:r:fillColor:stroke:" : "BrunoBB 09/07/2016 07:26",
 		"drawCircleAt:r:fillColor:stroke:strokeWidth:" : "BrunoBB 09/07/2016 07:26",
@@ -16,6 +16,7 @@
 		"drawRoundRectangleAt:id:height:width:fillColor:stroke:" : "BrunoBB 09/07/2016 07:00",
 		"drawText:at:" : "BrunoBB 09/06/2016 11:11",
 		"drawText:at:id:" : "BrunoBB 09/07/2016 07:04",
+		"getSvgObjectId:" : "BrunoBB 09/07/2016 09:34",
 		"initialize" : "BrunoBB 09/06/2016 11:12",
 		"svgMarkers" : "BrunoBB 09/06/2016 11:12",
 		"svgMarkers:" : "BrunoBB 09/06/2016 11:12",

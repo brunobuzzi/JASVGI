@@ -1,4 +1,4 @@
 draw
 draw: aJASVGITagFigure
 
-	^svgObjects at: aJASVGITagFigure getGlobalId put: aJASVGITagFigure
+	^svgObjects at: aJASVGITagFigure id put: aJASVGITagFigure
