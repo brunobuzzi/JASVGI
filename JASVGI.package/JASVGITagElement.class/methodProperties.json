@@ -1,7 +1,5 @@
 {
 	"class" : {
-		"name:withAll:" : "BrunoBB 09/06/2016 15:17",
-		"newId:name:withAll:" : "BrunoBB 09/07/2016 06:58",
 		"newId:withAll:" : "BrunoBB 09/07/2016 06:58",
 		"styleAttributesNames" : "BrunoBB 09/07/2016 07:15",
 		"withAll:" : "BrunoBB 09/06/2016 15:17" },
@@ -13,15 +11,22 @@
 		"attributes" : "BrunoBB 09/06/2016 11:03",
 		"attributes:" : "BrunoBB 09/06/2016 11:03",
 		"drawOn:" : "BrunoBB 09/06/2016 15:30",
+		"getAttributeNamed:" : "BrunoBB 09/09/2016 09:34",
 		"getStyleAttribute" : "BrunoBB 09/07/2016 09:19",
 		"hasSubTags" : "BrunoBB 09/06/2016 11:03",
+		"height" : "BrunoBB 09/09/2016 09:41",
 		"id" : "BrunoBB 09/06/2016 11:07",
 		"id:" : "BrunoBB 09/06/2016 11:07",
 		"initialize" : "BrunoBB 09/06/2016 15:15",
+		"position" : "BrunoBB 09/09/2016 09:35",
 		"setAttributes:" : "BrunoBB 09/06/2016 15:16",
+		"setMarker:" : "BrunoBB 09/09/2016 04:46",
 		"setMarkerEnd:" : "BrunoBB 09/07/2016 09:32",
 		"setMarkerStart:" : "BrunoBB 09/07/2016 09:32",
 		"styleAttributesNames" : "BrunoBB 09/07/2016 07:14",
 		"subTags" : "BrunoBB 09/06/2016 11:03",
 		"subTags:" : "BrunoBB 09/06/2016 11:03",
-		"svgTag" : "BrunoBB 09/06/2016 15:30" } }
+		"svgTag" : "BrunoBB 09/06/2016 15:30",
+		"width" : "BrunoBB 09/09/2016 09:40",
+		"x" : "BrunoBB 09/09/2016 09:40",
+		"y" : "BrunoBB 09/09/2016 09:40" } }

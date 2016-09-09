@@ -1,10 +1,12 @@
 {
 	"class" : {
+		"newArrowAt:id:width:height:" : "BrunoBB 09/09/2016 10:56",
 		"newCircleAt:id:width:height:" : "BrunoBB 09/07/2016 09:23",
 		"newCircleAt:width:height:" : "BrunoBB 09/07/2016 09:23" },
 	"instance" : {
 		"drawOn:" : "BrunoBB 09/07/2016 08:13",
 		"figure" : "BrunoBB 09/06/2016 15:39",
 		"figure:" : "BrunoBB 09/06/2016 15:39",
+		"setBlackArrow" : "BrunoBB 09/09/2016 10:51",
 		"setBlackCircle" : "BrunoBB 09/07/2016 07:32",
 		"svgTag" : "BrunoBB 09/06/2016 15:27" } }

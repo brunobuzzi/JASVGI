@@ -1,5 +1,10 @@
 {
 	"class" : {
-		 },
+		"styleAttributesNames" : "BrunoBB 09/09/2016 04:38" },
 	"instance" : {
-		 } }
+		"addConnectorPoint:" : "BrunoBB 09/09/2016 09:28",
+		"connectorPoints" : "BrunoBB 09/09/2016 04:38",
+		"connectorPoints:" : "BrunoBB 09/09/2016 04:38",
+		"drawOn:" : "BrunoBB 09/09/2016 05:06",
+		"getPointToConnectTo:" : "BrunoBB 09/09/2016 10:38",
+		"initialize" : "BrunoBB 09/09/2016 04:39" } }

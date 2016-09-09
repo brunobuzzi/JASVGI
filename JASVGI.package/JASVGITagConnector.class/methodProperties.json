@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"from:to:" : "BrunoBB 09/09/2016 05:12",
+		"fromId:toId:" : "BrunoBB 09/09/2016 05:20",
+		"fromId:toId:id:" : "BrunoBB 09/09/2016 05:23" },
+	"instance" : {
+		"endPoint" : "BrunoBB 09/09/2016 05:10",
+		"endPoint:" : "BrunoBB 09/09/2016 05:10",
+		"startId:endId:" : "BrunoBB 09/09/2016 05:20",
+		"startPoint" : "BrunoBB 09/09/2016 05:10",
+		"startPoint:" : "BrunoBB 09/09/2016 05:10",
+		"startPoint:endPoint:" : "BrunoBB 09/09/2016 05:21",
+		"svgTag" : "BrunoBB 09/09/2016 05:10" } }

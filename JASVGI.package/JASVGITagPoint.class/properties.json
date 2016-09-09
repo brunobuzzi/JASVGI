@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"connectorPoints" ],
-	"name" : "JASVGITagFigure",
+		 ],
+	"name" : "JASVGITagPoint",
 	"pools" : [
 		 ],
-	"super" : "JASVGITagElement",
+	"super" : "JASVGITagFigure",
 	"type" : "normal" }
