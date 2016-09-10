@@ -8,7 +8,7 @@ newAt: aPoint id: id r: radius fillColor: fillColor stroke: stroke strokeWidth: 
 		add: (JASVGIAttribute parent: self name: 'cy' value: aPoint y);
 		add: (JASVGIAttribute parent: self name: 'r' value: radius);
 		add: (JASVGIAttribute parent: self name: 'stroke' value: stroke);
-		add: (JASVGIAttribute parent: self name: 'strokeWidth' value: strokeWidth);
+		add: (JASVGIAttribute parent: self name: 'stroke-width' value: strokeWidth);
 		yourself.
 
 	^self newId: id withAll: attributes
