@@ -6,14 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"xmlCanvas",
-		"svgTag",
-		"svgObjects",
-		"svgMarkers",
-		"svgFigures",
-		"svgLines" ],
-	"name" : "JASVGICanvas",
+		 ],
+	"name" : "JASVGITagLine",
 	"pools" : [
 		 ],
-	"super" : "JASVGIObject",
+	"super" : "JASVGITagFigure",
 	"type" : "normal" }

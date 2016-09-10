@@ -4,7 +4,7 @@ newLineM: points id: id widthPx: widthPx stroke: stroke fillColor: fillColor
 	| pointsString colorString |
 
 	pointsString := PrintStream on: String new.
-	colorString := fillColor ifNil: ['none'] ifNotNil: [fillColor].
+	colorString := fillColor ifNil: ['black'] ifNotNil: [fillColor].
 
 	points do: [:eachPoint | pointsString nextPutAll: ('M',eachPoint x printString, ',', eachPoint y printString), ' '].
 

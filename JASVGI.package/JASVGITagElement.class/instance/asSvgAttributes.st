@@ -7,7 +7,7 @@ asSvgAttributes
 
 	attributes do: [:each | 
 		each isStyleAttribute
-		ifTrue: [styles nextPutAll: (each attributeName, ': ', each attributeValue,';')] 
+		ifTrue: [styles nextPutAll: (each attributeName, ': ', each getAttributeValue,';')] 
 		ifFalse: [svgAttributes add: each asSvgAttribute]].
 
 	svgAttributes 

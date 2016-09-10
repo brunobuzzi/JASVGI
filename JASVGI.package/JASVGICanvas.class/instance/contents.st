@@ -3,10 +3,13 @@ contents
 	
 	svgTag with: [
 		self tag: 'defs' with: [svgMarkers do: [:each | each drawOn: self]].
-		(svgObjects orderedKeys select: [:e | e notNil]) do:[:key | | svgFigureTag figureName |
-			svgFigureTag := svgObjects at: key.
-			figureName := (key subStrings: '.') first.
+		(svgFigures orderedKeys select: [:e | e notNil]) do:[:key | | svgFigureTag |
+			svgFigureTag := svgFigures at: key.
 			svgFigureTag drawOn: self.
+		].
+		(svgLines orderedKeys select: [:e | e notNil]) do:[:key | | svgLineTag |
+			svgLineTag := svgLines at: key.
+			svgLineTag drawOn: self.
 		].
 	].
 
