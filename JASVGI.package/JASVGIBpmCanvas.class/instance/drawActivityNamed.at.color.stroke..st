@@ -8,7 +8,7 @@ drawActivityNamed: aString at: aPoint color: color stroke: stroke
 						fillColor: color
 						stroke: stroke.
 
-	textPoint := (aPoint x + (self defaultTaskWidth // 3)) @ (aPoint y + (self defaultTaskHeight // 2)).
+	textPoint := (aPoint x + 10) @ (aPoint y + (self defaultTaskHeight // 2) + 2).
 
 	self drawText: aString at: textPoint.
 
