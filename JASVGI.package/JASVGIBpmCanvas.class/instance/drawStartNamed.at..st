@@ -3,6 +3,7 @@ drawStartNamed: aString at: aPoint
 	| start textPoint |
 
 	start := self drawCircleAt: aPoint r: 20 fillColor: self defaultStartEventFillColor stroke: self defultStartEventStroke.
+	start id: aString.
 
 	textPoint := (aPoint x + (self defaultEventWidth // 3)) @ (aPoint y + (self defaultEventHeight // 2)).
 
