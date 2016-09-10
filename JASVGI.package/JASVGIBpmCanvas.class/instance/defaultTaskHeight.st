@@ -1,4 +1,4 @@
-other
+default values
 defaultTaskHeight
 
-	^80
+	^60

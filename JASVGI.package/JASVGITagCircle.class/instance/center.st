@@ -1,4 +1,4 @@
 geometry
-position
+center
 
 	^(self x) @ (self y)

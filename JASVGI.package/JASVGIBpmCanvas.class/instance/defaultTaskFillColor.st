@@ -1,4 +1,4 @@
-other
+default values
 defaultTaskFillColor
 
 	^'lightsteelblue'

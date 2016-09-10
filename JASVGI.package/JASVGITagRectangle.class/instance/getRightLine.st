@@ -1,4 +1,4 @@
-other
+geometry
 getRightLine
 
 	^Array 

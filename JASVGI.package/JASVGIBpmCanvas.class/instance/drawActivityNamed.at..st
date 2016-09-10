@@ -1,8 +1,8 @@
-other
+bpm figure
 drawActivityNamed: aString at: aPoint
-	| rectId textPoint |
+	| rect textPoint |
 
-	rectId := self drawRoundRectangleAt: aPoint 
+	rect := self drawRoundRectangleAt: aPoint 
 						height: self defaultTaskHeight 
 						width: self defaultTaskWidth 
 						fillColor: self defaultTaskFillColor 
@@ -12,4 +12,4 @@ drawActivityNamed: aString at: aPoint
 
 	self drawText: aString at: textPoint.
 
-	namesAndTags at: aString put: rectId
+	namesAndTags at: aString put: rect "map the Activity name with the Activity id"

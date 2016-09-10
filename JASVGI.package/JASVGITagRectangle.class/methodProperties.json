@@ -4,11 +4,7 @@
 		"newRoundAt:id:height:width:fillColor:stroke:" : "BrunoBB 09/07/2016 07:12" },
 	"instance" : {
 		"getBottomLine" : "BrunoBB 09/09/2016 09:43",
-		"getBottomMiddlePoint" : "BrunoBB 09/09/2016 09:49",
 		"getLeftLine" : "BrunoBB 09/09/2016 09:44",
-		"getLeftMiddlePoint" : "BrunoBB 09/09/2016 09:49",
 		"getRightLine" : "BrunoBB 09/09/2016 09:45",
-		"getRightMiddlePoint" : "BrunoBB 09/09/2016 10:37",
 		"getTopLine" : "BrunoBB 09/09/2016 09:37",
-		"getTopMiddlePoint" : "BrunoBB 09/09/2016 10:00",
 		"svgTag" : "BrunoBB 09/06/2016 15:26" } }

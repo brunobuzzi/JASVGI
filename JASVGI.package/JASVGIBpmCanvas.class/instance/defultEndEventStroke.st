@@ -1,4 +1,4 @@
 default values
-defaultTaskStroke
+defultEndEventStroke
 
 	^'darkblue'

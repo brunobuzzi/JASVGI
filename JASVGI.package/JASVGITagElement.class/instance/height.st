@@ -1,3 +1,3 @@
-other
+geometry
 height
 	^(self getAttributeNamed: 'height') attributeValue
