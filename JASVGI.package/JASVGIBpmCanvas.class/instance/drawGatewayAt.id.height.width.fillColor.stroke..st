@@ -1,12 +1,17 @@
 bpm figure
 drawGatewayAt: aPoint id: id height: height width: width fillColor: fillColor stroke: stroke
-	| figure rotation |
+	| figure rotation textPoint |
 
 	figure := JASVGITagRectangle newAt: aPoint id: id height: height width: width fillColor: fillColor stroke: stroke.
 
 	rotation := 'rotate(-45 ', figure center x printString, ' ', figure center y printString, ')'.
 	figure transform: rotation.
 
+	textPoint := aPoint x @ (aPoint y - 10).
+
 	namesAndTags at: id put: figure. "map the Gateway name with the Gateway id"
 
-	^self draw: figure
+	self draw: figure.
+	self drawText: id at: textPoint.
+
+	^figure

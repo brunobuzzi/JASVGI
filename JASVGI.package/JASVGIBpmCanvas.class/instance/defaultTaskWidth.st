@@ -1,4 +1,4 @@
 default values
 defaultTaskWidth
 
-	^120
+	^100
