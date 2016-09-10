@@ -1,4 +1,4 @@
-figures
+bpm figure
 connect: figureOne to: figureTwo
 
 	^self drawLineM: 

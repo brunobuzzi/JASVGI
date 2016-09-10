@@ -17,8 +17,6 @@
 		"drawConnectorFromId:toId:" : "BrunoBB 09/09/2016 05:21",
 		"drawConnectorFromId:toId:id:" : "BrunoBB 09/09/2016 05:26",
 		"drawEllipseAt:id:rx:ry:fillColor:stroke:strokeWidth:" : "BrunoBB 09/07/2016 10:09",
-		"drawGatewayAt2:id:height:width:fillColor:stroke:" : "BrunoBB 09/09/2016 15:32",
-		"drawGatewayAt:id:height:width:fillColor:stroke:" : "BrunoBB 09/09/2016 15:21",
 		"drawLineM:" : "BrunoBB 09/07/2016 08:50",
 		"drawLineM:id:" : "BrunoBB 09/07/2016 08:50",
 		"drawRectangleAt:height:width:fillColor:stroke:" : "BrunoBB 09/06/2016 11:11",
