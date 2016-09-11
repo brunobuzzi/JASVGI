@@ -3,7 +3,8 @@ drawRectangleAt: aPoint id: id height: height width: width fillColor: fillColor 
 
 	^self draw: (JASVGITagRectangle 
 						newAt: aPoint 
-						id: id height: height 
+						id: id 
+						height: height 
 						width: width 
 						fillColor: fillColor 
 						stroke: stroke)

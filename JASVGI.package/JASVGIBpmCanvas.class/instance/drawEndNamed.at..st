@@ -1,8 +1,8 @@
 bpm figure
 drawEndNamed: aString at: aPoint
 	| end textPoint |
-
-	end := self drawCircleAt: aPoint r: 20 fillColor: self defaultEndEventFillColor stroke: self defultEndEventStroke strokeWidth: '3'.
+	"aPoint + 15 >> to fix a mismatch with Bizagi coordinates"
+	end := self drawCircleAt: aPoint + 15 r: 15 fillColor: self defaultEndEventFillColor stroke: self defultEndEventStroke strokeWidth: '3'.
 
 	textPoint := (aPoint x + (self defaultEventWidth // 3)) @ (aPoint y + (self defaultEventHeight // 2)).
 

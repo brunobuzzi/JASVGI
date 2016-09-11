@@ -1,8 +1,8 @@
 bpm figure
 drawGatewayAt: aPoint id: id height: height width: width fillColor: fillColor stroke: stroke
 	| figure rotation textPoint |
-
-	figure := JASVGITagRectangle newAt: aPoint id: id height: height width: width fillColor: fillColor stroke: stroke.
+	"aPoint + 5 >> to fix a mismatch with Bizagi coordinates"
+	figure := JASVGITagRectangle newAt: aPoint + 5 id: id height: height width: width fillColor: fillColor stroke: stroke.
 
 	rotation := 'rotate(-45 ', figure center x printString, ' ', figure center y printString, ')'.
 	figure transform: rotation.

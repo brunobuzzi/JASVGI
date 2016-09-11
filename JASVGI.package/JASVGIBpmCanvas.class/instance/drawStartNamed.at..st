@@ -1,8 +1,8 @@
 bpm figure
 drawStartNamed: aString at: aPoint
 	| start textPoint |
-
-	start := self drawCircleAt: aPoint r: 20 fillColor: self defaultStartEventFillColor stroke: self defultStartEventStroke.
+	"aPoint + 15 >> to fix a mismatch with Bizagi coordinates"
+	start := self drawCircleAt: aPoint + 15 r: 15 fillColor: self defaultStartEventFillColor stroke: self defultStartEventStroke.
 
 	textPoint := (aPoint x + (self defaultEventWidth // 3)) @ (aPoint y + (self defaultEventHeight // 2)).
 
