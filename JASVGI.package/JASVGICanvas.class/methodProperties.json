@@ -23,6 +23,7 @@
 		"drawLineFrom:to:color:" : "BrunoBB 09/10/2016 14:31",
 		"drawLineFrom:to:id:" : "BrunoBB 09/10/2016 13:16",
 		"drawLineFrom:to:id:color:" : "BrunoBB 09/10/2016 14:42",
+		"drawLineFrom:to:id:widthPx:stroke:fillColor:" : "BrunoBB 09/11/2016 07:10",
 		"drawLineM:" : "BrunoBB 09/10/2016 12:44",
 		"drawLineM:id:" : "BrunoBB 09/10/2016 12:44",
 		"drawRectangleAt:height:width:fillColor:stroke:" : "BrunoBB 09/10/2016 12:44",
