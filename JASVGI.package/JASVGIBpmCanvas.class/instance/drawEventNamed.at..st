@@ -7,6 +7,9 @@ drawEventNamed: aString at: aPoint
 
 	textPoint := (aPoint x + (self defaultEventWidth // 3)) @ (aPoint y + (self defaultEventHeight // 2)).
 
-	self drawText: aString at: event position.
+	namesAndTags at: aString put: event. "map the Activity name with the Activity id"
 
-	namesAndTags at: aString put: event "map the Activity name with the Activity id"
+	self addFigure: event toGroup: self defaultNameForProcessGroup.
+	self addFigure: (self drawText: aString at: event position) toGroup: self defaultNameForProcessGroup.
+
+	^event

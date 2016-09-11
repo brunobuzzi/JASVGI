@@ -1,0 +1,3 @@
+Accessing
+svgFigures
+	^svgFigures

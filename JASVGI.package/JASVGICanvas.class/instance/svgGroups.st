@@ -1,0 +1,3 @@
+Accessing
+svgGroups
+	^svgGroups

@@ -10,6 +10,9 @@ drawActivityNamed: aString at: aPoint color: color stroke: stroke
 
 	textPoint := (aPoint x + 10) @ (aPoint y + (self defaultTaskHeight // 2) + 2).
 
-	self drawText: aString at: textPoint.
+	namesAndTags at: aString put: rect. "map the Activity name with the Activity id"
 
-	namesAndTags at: aString put: rect "map the Activity name with the Activity id"
+	self addFigure: rect toGroup: self defaultNameForProcessGroup.
+	self addFigure: (self drawText: aString at: textPoint) toGroup: self defaultNameForProcessGroup.
+
+	^rect

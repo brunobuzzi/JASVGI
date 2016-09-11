@@ -8,3 +8,4 @@ initialize
 	svgMarkers := OrderPreservingDictionary new.
 	svgLines := OrderPreservingDictionary new.
 	svgFigures := OrderPreservingDictionary new.
+	svgGroups := OrderPreservingDictionary new.

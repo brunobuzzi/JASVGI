@@ -11,7 +11,8 @@
 		"svgObjects",
 		"svgMarkers",
 		"svgFigures",
-		"svgLines" ],
+		"svgLines",
+		"svgGroups" ],
 	"name" : "JASVGICanvas",
 	"pools" : [
 		 ],

@@ -5,7 +5,7 @@ contents
 		self tag: 'defs' with: [svgMarkers do: [:each | each drawOn: self]].
 		(svgGroups orderedKeys select: [:e | e notNil]) do:[:key | | tagGroup |
 			tagGroup := svgGroups at: key.
-			self tag: tagGroup svgTag with: [tagGroup figuresDo: [:eachFigure | eachFigure drawOn: self]].
+			tagGroup drawOn: self.
 		].
 		(svgFigures orderedKeys select: [:e | e notNil]) do:[:key | | svgFigureTag |
 			svgFigureTag := svgFigures at: key.

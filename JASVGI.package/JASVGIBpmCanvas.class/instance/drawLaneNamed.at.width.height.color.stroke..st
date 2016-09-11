@@ -8,6 +8,9 @@ drawLaneNamed: aString at: aPoint width: width height: height color: color strok
 						fillColor: color
 						stroke: stroke.
 
-	self drawText: aString at: aPoint - 10.
+	namesAndTags at: aString put: rect. "map the Activity name with the Activity id"
 
-	namesAndTags at: aString put: rect "map the Activity name with the Activity id"
+	self addFigure: rect toGroup: self defaultNameForProcessGroup.
+	self addFigure: (self drawText: aString at: aPoint - 10) toGroup: self defaultNameForProcessGroup.
+
+	^rect

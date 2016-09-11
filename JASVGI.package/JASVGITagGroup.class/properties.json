@@ -1,0 +1,15 @@
+{
+	"category" : "JASVGI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"svgFigures" ],
+	"name" : "JASVGITagGroup",
+	"pools" : [
+		 ],
+	"super" : "JASVGITagElement",
+	"type" : "normal" }

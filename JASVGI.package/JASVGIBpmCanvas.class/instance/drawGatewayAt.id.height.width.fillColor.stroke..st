@@ -12,6 +12,8 @@ drawGatewayAt: aPoint id: id height: height width: width fillColor: fillColor st
 	namesAndTags at: id put: figure. "map the Gateway name with the Gateway id"
 
 	self draw: figure.
-	self drawText: id at: textPoint.
+
+	self addFigure: figure toGroup: self defaultNameForProcessGroup.
+	self addFigure: (self drawText: id at: textPoint) toGroup: self defaultNameForProcessGroup.
 
 	^figure
