@@ -5,7 +5,7 @@ newWidth: width height: height
 	configuration := self defaultHeaders 
 		add: ('width' -> width); 
 		add: ('height' -> height); 
-		add: ('viewport-fill' -> 'red'); 
+		add: ('style' -> 'background-color: rgb(212, 211, 164);'); 
 		yourself.
 	^super new 
 		initialize 
