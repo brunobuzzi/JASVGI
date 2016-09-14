@@ -11,8 +11,6 @@ newLineFrom: originPoint to: finalPoint id: id widthPx: widthPx stroke: stroke f
 		add: (JASVGIAttribute parent: self name: 'stroke-width' value: widthPx);
 		add: (JASVGIAttribute parent: self name: 'stroke' value: stroke);
 		add: (JASVGIAttribute parent: self name: 'fill' value: fillColor);
-		add: (JASVGIAttribute parent: self name: 'fill-opacity' value: '1');
-		add: (JASVGIAttribute parent: self name: 'stroke-opacity' value: 0.5);
 		yourself.
 
 	^self newId: id withAll: attributes

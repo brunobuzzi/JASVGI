@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfJasvgi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfJasvgi",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
