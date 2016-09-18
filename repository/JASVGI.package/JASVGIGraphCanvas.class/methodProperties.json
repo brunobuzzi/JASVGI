@@ -1,6 +1,13 @@
 {
 	"class" : {
-		 },
+		"example1" : "BrunoBB 09/18/2016 11:16",
+		"example2" : "BrunoBB 09/18/2016 12:06" },
 	"instance" : {
-		"colorPalette" : "BrunoBB 09/18/2016 09:52",
-		"drawBarGraph:at:maxHeight:width:" : "BrunoBB 09/18/2016 10:16" } }
+		"colorPalette" : "BrunoBB 09/18/2016 11:47",
+		"drawBarGraph:at:maxHeight:width:" : "BrunoBB 09/18/2016 10:16",
+		"drawPies:at:asc:zoom:" : "BrunoBB 09/18/2016 12:18",
+		"drawPies:at:asc:zoom:showTotal:" : "BrunoBB 09/18/2016 12:18",
+		"drawPiesAsc:at:zoom:" : "BrunoBB 09/18/2016 12:05",
+		"drawPiesAsc:at:zoom:showTotal:" : "BrunoBB 09/18/2016 12:19",
+		"drawPiesDesc:at:zoom:" : "BrunoBB 09/18/2016 12:05",
+		"drawPiesDesc:at:zoom:showTotal:" : "BrunoBB 09/18/2016 12:20" } }
