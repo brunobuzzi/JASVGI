@@ -1,0 +1,14 @@
+{
+	"category" : "JASVGI-Graphics",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "JASVGIGraphCanvas",
+	"pools" : [
+		 ],
+	"super" : "JASVGICanvas",
+	"type" : "normal" }
