@@ -4,9 +4,10 @@ getArcPointFor: angle angleSum: angleSum radius: radius
 	| endPoint totalAngle |
 
 	totalAngle := angleSum + angle. "the angle of the arc is: from <angleSum> to <totalAngle>"
-
+	"formula: x= cos(radian angle) x radius. 											y= sin(radian angle) x radius "
 	endPoint := ((((totalAngle * DecimalFloat pi) / 180) cos) * radius) @ ((((totalAngle * DecimalFloat pi) / 180) sin) * radius). 
 
+	"border cases"
 	(totalAngle = 90) ifTrue: [endPoint x: 0; y: radius negated].
 	(totalAngle = 270) ifTrue: [endPoint x: 0; y: radius].
  	(totalAngle = 0 or: [totalAngle = 360])  ifTrue: [endPoint y: 0; x: radius].

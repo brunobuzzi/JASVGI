@@ -1,9 +1,12 @@
 bar
 drawHorizontalBarGraph: aDictionary at: aPoint maxWidth: maxWidth width: width 
+	"The receiver draw a Horizontally oriented Bar Graph with values in <aDictionary> where the key is the label and the value is value.
+	The max horizontal bar is defined by <maxWidth> where the max value in <aDictionary> will be rendered as maxWidth in the graph.
+	The witdh of each bar is defined by <width>"
 	| lateralIndex x y maxValue axis xShift group axisRange |
 
 	group := JASVGITagGroup newNamed: 'horizontalBar'.
-	group transform: 'translate(50,50)'.
+	group transform: 'translate(20,20)'.
 	svgGroups at: 'horizontalBar' put: group.
 	lateralIndex := 1.
 	y := aPoint y.

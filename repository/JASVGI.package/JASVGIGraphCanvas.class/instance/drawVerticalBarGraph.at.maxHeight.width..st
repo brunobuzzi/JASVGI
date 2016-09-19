@@ -1,9 +1,12 @@
 bar
 drawVerticalBarGraph: aDictionary at: aPoint maxHeight: maxHeight width: width 
+	"The receiver draw a Vertically oriented Bar Graph with values in <aDictionary> where the key is the label and the value is value.
+	The max vertical bar is defined by <maxHeight> where the max value in <aDictionary> will be rendered as maxHeight in the graph.
+	The witdh of each bar is defined by <width>"
 	| lateralIndex x y maxValue axis yShift group |
 
 	group := JASVGITagGroup newNamed: 'verticalBar'.
-	group transform: 'translate(120,50)'.
+	group transform: 'translate(20,', (maxHeight + 20) printString,')'.
 	svgGroups at: 'verticalBar' put: group.
 	lateralIndex := 1.
 	y := aPoint y.
@@ -19,7 +22,7 @@ drawVerticalBarGraph: aDictionary at: aPoint maxHeight: maxHeight width: width
 	yShift := maxHeight // 5.
 	1 to: 5 do: [:index | | axisRange line text |
 		"draw scale Y bar"
-		axisRange := y - (yShift * index).
+		axisRange := y - (yShift * index) .
 		line := self drawLineFrom: ((aPoint x - 5) @ axisRange) to: ((aPoint x + 5) @ axisRange).
 		text := self drawText: (maxValue * index // 5) printString at: ((aPoint x - 10) @ (axisRange - 3)).
 		self addFigure: line toGroup: 'verticalBar'.

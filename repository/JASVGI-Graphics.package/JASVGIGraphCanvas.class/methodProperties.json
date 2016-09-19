@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"example1" : "BrunoBB 09/19/2016 09:14",
+		"example1" : "BrunoBB 09/19/2016 14:32",
 		"example2" : "BrunoBB 09/18/2016 12:06",
 		"example3" : "BrunoBB 09/19/2016 07:11",
 		"example4" : "BrunoBB 09/19/2016 07:41",
@@ -8,14 +8,14 @@
 		"example6" : "BrunoBB 09/19/2016 10:51" },
 	"instance" : {
 		"colorPalette" : "BrunoBB 09/19/2016 07:26",
-		"drawHorizontalBarGraph:at:maxWidth:width:" : "BrunoBB 09/19/2016 10:54",
-		"drawPieAngles:at:radius:" : "BrunoBB 09/19/2016 08:06",
-		"drawPiePercentage:at:radius:" : "BrunoBB 09/19/2016 07:33",
+		"drawHorizontalBarGraph:at:maxWidth:width:" : "BrunoBB 09/19/2016 14:31",
+		"drawPieAngles:at:radius:" : "BrunoBB 09/19/2016 14:38",
+		"drawPiePercentage:at:radius:" : "BrunoBB 09/19/2016 13:36",
 		"drawPies:at:asc:zoom:" : "BrunoBB 09/18/2016 12:18",
-		"drawPies:at:asc:zoom:showTotal:" : "BrunoBB 09/18/2016 12:18",
+		"drawPies:at:asc:zoom:showTotal:" : "BrunoBB 09/19/2016 13:40",
 		"drawPiesAsc:at:zoom:" : "BrunoBB 09/18/2016 12:05",
 		"drawPiesAsc:at:zoom:showTotal:" : "BrunoBB 09/18/2016 12:19",
 		"drawPiesDesc:at:zoom:" : "BrunoBB 09/18/2016 12:05",
 		"drawPiesDesc:at:zoom:showTotal:" : "BrunoBB 09/18/2016 12:20",
-		"drawVerticalBarGraph:at:maxHeight:width:" : "BrunoBB 09/19/2016 10:57",
-		"getArcPointFor:angleSum:radius:" : "BrunoBB 09/19/2016 07:39" } }
+		"drawVerticalBarGraph:at:maxHeight:width:" : "BrunoBB 09/19/2016 14:30",
+		"getArcPointFor:angleSum:radius:" : "BrunoBB 09/19/2016 13:21" } }
