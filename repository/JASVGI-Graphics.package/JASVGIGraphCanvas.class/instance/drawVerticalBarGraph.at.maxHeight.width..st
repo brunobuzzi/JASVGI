@@ -1,0 +1,39 @@
+bar
+drawVerticalBarGraph: aDictionary at: aPoint maxHeight: maxHeight width: width 
+	| lateralIndex x y maxValue axis yShift group |
+
+	group := JASVGITagGroup newNamed: 'verticalBar'.
+	group transform: 'translate(120,50)'.
+	svgGroups at: 'verticalBar' put: group.
+	lateralIndex := 1.
+	y := aPoint y.
+	x := aPoint x + 25.
+	maxValue := aDictionary asSortedCollection last.
+	"draw graph axis Y only"
+	self addMarker: (JASVGITagMarker newArrowAt: 10@5 id: 'arrow' width: 10 height: 10).
+	self addMarker: (JASVGITagMarker newCircleAt: 5@5 id: 'circle' width: 10 height: 10).
+	axis := self drawLineFrom: aPoint to: (aPoint x @ (aPoint y -  maxHeight - 20)).
+	self addFigure: axis toGroup: 'verticalBar'.
+	axis setMarkerStart: 'circle'. 
+	axis setMarkerEnd: 'arrow'. 
+	yShift := maxHeight // 5.
+	1 to: 5 do: [:index | | axisRange line text |
+		"draw scale Y bar"
+		axisRange := y - (yShift * index).
+		line := self drawLineFrom: ((aPoint x - 5) @ axisRange) to: ((aPoint x + 5) @ axisRange).
+		text := self drawText: (maxValue * index // 5) printString at: ((aPoint x - 10) @ (axisRange - 3)).
+		self addFigure: line toGroup: 'verticalBar'.
+		self addFigure: text toGroup: 'verticalBar']. 
+
+	"draw rectangle bars"
+	aDictionary keysAndValuesDo: [:key :value | | text text2 graph graphHeight |
+		text := self drawText: key at: (x @ (y + 15)) textSizePx: '10px'.
+		text2 := self drawText: value printString at: (x @ (y + 30)) textSizePx: '10px'.
+		graphHeight := value * maxHeight //  maxValue.
+		graph := self drawRectangleAt: (x @ (y - graphHeight)) height: graphHeight width: width fillColor: self colorPalette randomPeek stroke: 'black'.
+		self addFigure: graph toGroup: 'verticalBar'.
+		self addFigure: text toGroup: 'verticalBar'.
+		self addFigure: text2 toGroup: 'verticalBar'.
+		lateralIndex := lateralIndex + 1.
+		x := x + width + 10.
+	].

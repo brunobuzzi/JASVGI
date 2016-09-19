@@ -1,4 +1,4 @@
-other
+pie
 drawPiePercentage: percentageDictionary at: aPoint radius: radius
 
 	^self 

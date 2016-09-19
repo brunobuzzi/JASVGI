@@ -1,4 +1,4 @@
-other
+pie
 getArcPointFor: angle angleSum: angleSum radius: radius
 	"Answer the end point <aPoint> for the arc with angle <angle> and circle angle completion <angleSum> with radius <radius> "
 	| endPoint totalAngle |

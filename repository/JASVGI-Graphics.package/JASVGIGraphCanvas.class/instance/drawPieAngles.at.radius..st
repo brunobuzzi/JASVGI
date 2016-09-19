@@ -1,7 +1,9 @@
-other
+pie
 drawPieAngles: anglesDictionary at: aPoint radius: radius
-	| group angleSum startPoint labelsX labelsY |
+	| group angleSum startPoint labelsX labelsY random palette |
 
+	random := Random new.
+	palette := self colorPalette asOrderedCollection.
 	startPoint := radius @ 0.
 	group := JASVGITagGroup newNamed: 'pie'.
 	group transform: 'translate(120,120)'.
@@ -16,9 +18,11 @@ drawPieAngles: anglesDictionary at: aPoint radius: radius
 		pointsString nextPutAll: 'M0,0 '. "center of the circle"
 		pointsString nextPutAll: (startPoint x printString, ',', startPoint y printString).
 		pointsString nextPutAll: ' A', radius printString, ',',radius printString.
-		pointsString nextPutAll: ' 1 0 0 '.
+		pointsString nextPutAll: ' 1'.
+		(eachAngle > 180) ifTrue: [pointsString nextPutAll: ' 1 0 '] ifFalse: [pointsString nextPutAll: ' 0 0 '].
 		pointsString nextPutAll: (calculatedPoint x printString, ',', calculatedPoint y printString, ' Z').
-		color := self colorPalette randomPeek.
+		color := palette randomPeek: random.
+		palette remove: color.
 		line := self drawLine: pointsString contents id: UUID new asString widthPx: '1px' stroke: 'black' fillColor: color.
 		self addFigure: line toGroup: 'pie'.
 		angleSum := angleSum + eachAngle.
