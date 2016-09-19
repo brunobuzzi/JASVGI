@@ -1,13 +1,18 @@
 {
 	"class" : {
 		"example1" : "BrunoBB 09/18/2016 11:16",
-		"example2" : "BrunoBB 09/18/2016 12:06" },
+		"example2" : "BrunoBB 09/18/2016 12:06",
+		"example3" : "BrunoBB 09/19/2016 07:11",
+		"example4" : "BrunoBB 09/19/2016 07:41" },
 	"instance" : {
-		"colorPalette" : "BrunoBB 09/18/2016 11:47",
+		"colorPalette" : "BrunoBB 09/19/2016 07:26",
 		"drawBarGraph:at:maxHeight:width:" : "BrunoBB 09/18/2016 10:16",
+		"drawPieAngles:at:radius:" : "BrunoBB 09/19/2016 07:12",
+		"drawPiePercentage:at:radius:" : "BrunoBB 09/19/2016 07:33",
 		"drawPies:at:asc:zoom:" : "BrunoBB 09/18/2016 12:18",
 		"drawPies:at:asc:zoom:showTotal:" : "BrunoBB 09/18/2016 12:18",
 		"drawPiesAsc:at:zoom:" : "BrunoBB 09/18/2016 12:05",
 		"drawPiesAsc:at:zoom:showTotal:" : "BrunoBB 09/18/2016 12:19",
 		"drawPiesDesc:at:zoom:" : "BrunoBB 09/18/2016 12:05",
-		"drawPiesDesc:at:zoom:showTotal:" : "BrunoBB 09/18/2016 12:20" } }
+		"drawPiesDesc:at:zoom:showTotal:" : "BrunoBB 09/18/2016 12:20",
+		"getArcPointFor:angleSum:radius:" : "BrunoBB 09/19/2016 07:39" } }
