@@ -6,10 +6,12 @@
 		"example4" : "BrunoBB 09/19/2016 07:41",
 		"example5" : "BrunoBB 09/19/2016 10:51",
 		"example6" : "BrunoBB 09/19/2016 10:51",
-		"example7" : "BrunoBB 09/19/2016 16:04" },
+		"example7" : "BrunoBB 09/19/2016 16:04",
+		"example8" : "BrunoBB 09/20/2016 04:18" },
 	"instance" : {
 		"colorPalette" : "BrunoBB 09/19/2016 07:26",
-		"drawHorizontalBarGraph:at:maxWidth:width:" : "BrunoBB 09/19/2016 14:31",
+		"drawHorizontalBarGraph:at:maxWidth:width:" : "BrunoBB 09/20/2016 04:09",
+		"drawHorizontalBarGraph:at:maxWidth:width:transform:" : "BrunoBB 09/20/2016 04:08",
 		"drawPieAngles:at:radius:" : "BrunoBB 09/19/2016 15:58",
 		"drawPieAngles:at:radius:transform:" : "BrunoBB 09/19/2016 15:57",
 		"drawPiePercentage:at:radius:" : "BrunoBB 09/19/2016 13:36",
@@ -20,5 +22,6 @@
 		"drawPiesAsc:at:zoom:showTotal:" : "BrunoBB 09/18/2016 12:19",
 		"drawPiesDesc:at:zoom:" : "BrunoBB 09/18/2016 12:05",
 		"drawPiesDesc:at:zoom:showTotal:" : "BrunoBB 09/18/2016 12:20",
-		"drawVerticalBarGraph:at:maxHeight:width:" : "BrunoBB 09/19/2016 14:30",
+		"drawVerticalBarGraph:at:maxHeight:width:" : "BrunoBB 09/20/2016 04:06",
+		"drawVerticalBarGraph:at:maxHeight:width:transform:" : "BrunoBB 09/20/2016 04:07",
 		"getArcPointFor:angleSum:radius:" : "BrunoBB 09/19/2016 13:21" } }
