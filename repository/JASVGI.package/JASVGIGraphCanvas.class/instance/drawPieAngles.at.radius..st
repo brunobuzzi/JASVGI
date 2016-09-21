@@ -7,4 +7,4 @@ drawPieAngles: anglesDictionary at: aPoint radius: radius
 	^self drawPieAngles: anglesDictionary 
 			at: aPoint 
 			radius: radius 
-			transform:  'translate(', (radius + 20) printString, ',', (radius + 20) printString,')'
+			transform: 'translate(', (radius + 20) printString, ',', (radius + 20) printString,')'

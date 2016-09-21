@@ -16,7 +16,7 @@ drawPieAngles: anglesDictionary at: aPoint radius: radius transform: transform
 	labelsX := radius + aPoint x + 40.
 	labelsY := aPoint y - radius.
 
-	anglesDictionary keysAndValuesDo: [:label :eachAngle | | line pointsString calculatedPoint color percentage rect text |
+	anglesDictionary keysAndValuesDo: [:label :eachAngle | | line pointsString calculatedPoint color percentage rect text yShift |
 		calculatedPoint := self getArcPointFor: eachAngle angleSum: angleSum radius: radius.
 		pointsString := PrintStream on: String new.
 		pointsString nextPutAll: 'M0,0 '. "center of the circle"
@@ -24,7 +24,8 @@ drawPieAngles: anglesDictionary at: aPoint radius: radius transform: transform
 		pointsString nextPutAll: ' A', radius printString, ',',radius printString.
 		pointsString nextPutAll: ' 1'.
 		(eachAngle > 180) ifTrue: [pointsString nextPutAll: ' 1 0 '] ifFalse: [pointsString nextPutAll: ' 0 0 '].
-		pointsString nextPutAll: (calculatedPoint x printString, ',', calculatedPoint y printString, ' Z').
+		yShift := (eachAngle = 360) "360" ifTrue: ['0.5'] ifFalse: [calculatedPoint y printString].
+		pointsString nextPutAll: (calculatedPoint x printString, ',', yShift, ' Z').
 		color := palette randomPeek: random.
 		palette remove: color.
 		line := self drawLine: pointsString contents id: UUID new asString widthPx: '1px' stroke: 'black' fillColor: color.
