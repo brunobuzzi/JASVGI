@@ -22,5 +22,5 @@ example8
 			at: 15@15 
 			maxHeight: 200 
 			width: 30 
-			transform: 'translate(50,400),scale(2,2)') 
+			transform: 'translate(50,400),scale(1.5,1.5)') 
 		contents

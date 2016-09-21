@@ -1,5 +1,5 @@
 bar
-drawHorizontalBarGraph: aDictionary at: aPoint maxWidth: maxWidth width: width transform: transform
+drawInnerSplit: splitDictionary horizontalBarGraph: aDictionary at: aPoint maxWidth: maxWidth width: width transform: transform
 	"The receiver draw a Horizontally oriented Bar Graph with values in <aDictionary> where the key is the label and the value is value.
 	The max horizontal bar is defined by <maxWidth> where the max value in <aDictionary> will be rendered as maxWidth in the graph.
 	The witdh of each bar is defined by <width>"
@@ -33,15 +33,30 @@ drawHorizontalBarGraph: aDictionary at: aPoint maxWidth: maxWidth width: width t
 		axisRange := axisRange + xShift]. 
 
 	"draw rectangle bars"
-	y := y + 15.
-	aDictionary keysAndValuesDo: [:key :value | | text text2 graph graphHeight |
+	y := y + 25.
+	aDictionary keysAndValuesDo: [:key :value | | text text2 graph graphHeight splitX color opacity |
 		text := self drawText: key at: (x - 25) @ y textSizePx: '10px'.
 		text2 := self drawText: value printString at: ((x - 25) @ (y + 10)) textSizePx: '10px'.
 		graphHeight := value * maxWidth //  maxValue.
-		graph := self drawRectangleAt: (x @ y) height: width width: graphHeight fillColor: self colorPalette randomPeek stroke: 'black'.
-		self addFigure: graph toGroup: groupName.
+		splitX := x.
+		"graph := self drawRectangleAt: (x @ y) height: width width: graphHeight fillColor: self colorPalette randomPeek stroke: 'black'."
+		opacity := 0.5.
+		color := self colorPalette randomPeek.
+		(splitDictionary at: key) keysAndValuesDo: [:splitKey :splitValue | | splitText splitText2 innerWidth splitGraph |
+			innerWidth := splitValue * maxWidth //  maxValue.
+			splitGraph := self drawRectangleAt: (splitX @ y) height: width width: innerWidth fillColor: color stroke: 'black'.
+			splitGraph add: (JASVGIAttribute parent: splitGraph name: 'fill-opacity' value: opacity printString).
+			opacity := opacity + 0.2.
+			splitText := self drawText: splitKey at: (((splitX + (innerWidth//2)) - 20) @ (y-8)) textSizePx: '6px'.
+			splitText2 := self drawText: splitValue printString at: (((splitX + (innerWidth//2)) - 20) @ (y-3)) textSizePx: '6px'.
+			self addFigure: splitGraph toGroup: groupName.
+			self addFigure: splitText toGroup: groupName.
+			self addFigure: splitText2 toGroup: groupName.
+			splitX := splitX + innerWidth.
+		]. 
+		"self addFigure: graph toGroup: groupName."
 		self addFigure: text toGroup: groupName.
 		self addFigure: text2 toGroup: groupName.
 		lateralIndex := lateralIndex + 1.
-		y := y + width + 10.
+		y := y + width + 20.
 	].

@@ -3,11 +3,12 @@ drawHorizontalBarGraph: aDictionary at: aPoint maxWidth: maxWidth width: width t
 	"The receiver draw a Horizontally oriented Bar Graph with values in <aDictionary> where the key is the label and the value is value.
 	The max horizontal bar is defined by <maxWidth> where the max value in <aDictionary> will be rendered as maxWidth in the graph.
 	The witdh of each bar is defined by <width>"
-	| lateralIndex x y maxValue axis xShift group axisRange |
+	| lateralIndex x y maxValue axis xShift group axisRange groupName |
 
-	group := JASVGITagGroup newNamed: 'horizontalBar'.
+	groupName := 'horizontalBar'.
+	group := JASVGITagGroup newNamed: groupName.
 	group transform: transform.
-	svgGroups at: 'horizontalBar' put: group.
+	svgGroups at: groupName put: group.
 	lateralIndex := 1.
 	y := aPoint y.
 	x := aPoint x.
@@ -17,7 +18,7 @@ drawHorizontalBarGraph: aDictionary at: aPoint maxWidth: maxWidth width: width t
 	self addMarker: (JASVGITagMarker newCircleAt: 5@5 id: 'circle' width: 10 height: 10).
 
 	axis := self drawLineFrom: x@y to: (x +  maxWidth + 20) @ y.
-	self addFigure: axis toGroup: 'horizontalBar'.
+	self addFigure: axis toGroup: groupName.
 	axis setMarkerStart: 'circle'. 
 	axis setMarkerEnd: 'arrow'. 
 	xShift := maxWidth // 5.
@@ -27,8 +28,8 @@ drawHorizontalBarGraph: aDictionary at: aPoint maxWidth: maxWidth width: width t
 		"draw scale Y bar"
 		line := self drawLineFrom: (axisRange @ (aPoint y - 5)) to: (axisRange @ (aPoint y + 5)).
 		text := self drawText: (maxValue * index // 5) printString at: ((axisRange - 3) @ (aPoint x - 10)).
-		self addFigure: line toGroup: 'horizontalBar'.
-		self addFigure: text toGroup: 'horizontalBar'.
+		self addFigure: line toGroup: groupName.
+		self addFigure: text toGroup: groupName.
 		axisRange := axisRange + xShift]. 
 
 	"draw rectangle bars"
@@ -38,9 +39,9 @@ drawHorizontalBarGraph: aDictionary at: aPoint maxWidth: maxWidth width: width t
 		text2 := self drawText: value printString at: ((x - 25) @ (y + 10)) textSizePx: '10px'.
 		graphHeight := value * maxWidth //  maxValue.
 		graph := self drawRectangleAt: (x @ y) height: width width: graphHeight fillColor: self colorPalette randomPeek stroke: 'black'.
-		self addFigure: graph toGroup: 'horizontalBar'.
-		self addFigure: text toGroup: 'horizontalBar'.
-		self addFigure: text2 toGroup: 'horizontalBar'.
+		self addFigure: graph toGroup: groupName.
+		self addFigure: text toGroup: groupName.
+		self addFigure: text2 toGroup: groupName.
 		lateralIndex := lateralIndex + 1.
 		y := y + width + 10.
 	].

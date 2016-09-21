@@ -31,17 +31,20 @@ drawInnerSplit: splitDictionary verticalBarGraph: aDictionary at: aPoint maxHeig
 		self addFigure: text toGroup: groupName]. 
 
 	"draw rectangle bars"
-	aDictionary keysAndValuesDo: [:key :value | | text text2 graph graphHeight splitY |
+	aDictionary keysAndValuesDo: [:key :value | | text text2 graph graphHeight splitY color opacity |
 		text := self drawText: key at: (x @ (y + 15)) textSizePx: '10px'.
 		text2 := self drawText: value printString at: (x @ (y + 30)) textSizePx: '10px'.
 		graphHeight := value * maxHeight //  maxValue.
+		color := colorPalette randomPeek.
+		colorPalette remove: color.
+		opacity := 0.5.
 "		graph := self drawRectangleAt: (x @ (y - graphHeight)) height: graphHeight width: width fillColor: self colorPalette randomPeek stroke: 'black'."
 		splitY := y - graphHeight.
-		(splitDictionary at: key) keysAndValuesDo: [:splitKey :splitValue | | splitText splitText2 innerHeight splitGraph color |
+		(splitDictionary at: key) keysAndValuesDo: [:splitKey :splitValue | | splitText splitText2 innerHeight splitGraph |
 			innerHeight := splitValue * maxHeight //  maxValue.
-			color := colorPalette randomPeek.
-			colorPalette remove: color.
 			splitGraph := self drawRectangleAt: (x @ splitY) height: innerHeight width: width fillColor: color stroke: 'black'.
+			splitGraph add: (JASVGIAttribute parent: splitGraph name: 'fill-opacity' value: opacity printString).
+			opacity := opacity + 0.2.
 			splitY := splitY + innerHeight.
 			splitText := self drawText: splitKey at: ((x-20) @ (splitY - (innerHeight//2))) textSizePx: '6px'.
 			splitText2 := self drawText: splitValue printString at: ((x-20) @ (splitY + 8 - (innerHeight//2))) textSizePx: '6px'.
