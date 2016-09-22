@@ -2,7 +2,7 @@ other
 example3
  | dict |
 
-	dict := Dictionary new.
+	dict := OrderPreservingDictionary new.
 	dict at: 'miem' put: 80;
 		at: 'md' put: 70;
 		at: 'mef' put: 50;

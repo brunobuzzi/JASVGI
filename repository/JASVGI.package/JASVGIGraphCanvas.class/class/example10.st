@@ -1,5 +1,5 @@
 other
-example8
+example10
  | dict splitDict |
 
 	splitDict := OrderPreservingDictionary new.
@@ -17,10 +17,10 @@ example8
 		at: 'india' put: (OrderPreservingDictionary new at: 'new delhi' put: 15; at: 'bombay' put: 8; at: 'mumba' put: 2 ;yourself).
 
 	^((self newWidth: '1000px' height: '1000px') 
-			drawInnerSplit: splitDict 
+			drawJoin: splitDict 
 			verticalBarGraph: dict 
 			at: 15@15 
 			maxHeight: 200 
-			width: 30 
+			width: 20 
 			transform: 'translate(50,400),scale(1.5,1.5)') 
 		contents

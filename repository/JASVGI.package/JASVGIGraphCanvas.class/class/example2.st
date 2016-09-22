@@ -2,7 +2,7 @@ other
 example2
  | dict |
 
-	dict := Dictionary new.
+	dict := OrderPreservingDictionary new.
 	dict at: 'rusia' put: 30;
 		at: 'usa' put: 25;
 		at: 'china' put: 20;
