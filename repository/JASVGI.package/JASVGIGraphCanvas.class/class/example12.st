@@ -21,6 +21,6 @@ example12
 			horizontalBarGraph: dict 
 			at: 15@15 
 			maxWidth: 400 
-			width: 6
+			width: 15
 			transform: 'translate(20,10),scale(1.5,1.5)') 
 		contents

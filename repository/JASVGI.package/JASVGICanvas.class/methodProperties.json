@@ -42,6 +42,7 @@
 		"drawText:at:textSizePx:" : "BrunoBB 09/12/2016 14:11",
 		"getGroupNamed:" : "BrunoBB 09/11/2016 12:17",
 		"getSvgObjectId:" : "BrunoBB 09/11/2016 09:46",
+		"height" : "BrunoBB 09/22/2016 09:03",
 		"initialize" : "BrunoBB 09/11/2016 09:46",
 		"setCanvasWith:" : "BrunoBB 09/11/2016 09:46",
 		"setDefaultCanvas" : "BrunoBB 09/11/2016 09:46",
@@ -60,5 +61,6 @@
 		"tag:attributes:" : "BrunoBB 09/11/2016 09:46",
 		"tag:attributes:with:" : "BrunoBB 09/11/2016 09:46",
 		"tag:with:" : "BrunoBB 09/11/2016 09:46",
+		"width" : "BrunoBB 09/22/2016 09:03",
 		"xmlCanvas" : "BrunoBB 09/11/2016 09:46",
 		"xmlCanvas:" : "BrunoBB 09/11/2016 09:46" } }
