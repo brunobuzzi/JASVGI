@@ -14,32 +14,32 @@ example13
 		drawDonutAngles: dict 
 		at: 10@10 
 		radius: 80
-		transform: 'translate(100,100)'
+		width: 60
 		backcolor: 'white'
-		width: 60.
+		transform: 'translate(100,100)'.
 
 	canvas
 		drawDonutAngles: dict 
 		at: 10@10 
 		radius: 80
-		transform: 'translate(400,100)'
+		width: 50
 		backcolor: 'white'
-		width: 50.
+		transform: 'translate(400,100)'.
 
 	canvas
 		drawDonutAngles: dict 
 		at: 10@10 
 		radius: 80
-		transform: 'translate(100,300)'
+		width: 40
 		backcolor: 'white'
-		width: 40.
+		transform: 'translate(100,300)'.
 
 	canvas
 		drawDonutAngles: dict 
 		at: 10@10 
 		radius: 80
-		transform: 'translate(400,300)'
+		width: 30
 		backcolor: 'white'
-		width: 30.
+		transform: 'translate(400,300)'.
 
 	^canvas contents

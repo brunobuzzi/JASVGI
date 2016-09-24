@@ -31,12 +31,13 @@ drawInnerSplit: splitDictionary verticalBarGraph: aDictionary at: aPoint maxHeig
 		self addFigure: text toGroup: groupName]. 
 
 	"draw rectangle bars"
-	aDictionary keysAndValuesDo: [:key :value | | text text2 graph graphHeight splitY color opacity |
+	aDictionary keysAndValuesDo: [:key :value | | text text2 graphHeight splitY color opacity |
 		text := self drawText: key at: (x @ (y + 15)) textSizePx: '10px'.
 		text2 := self drawText: value printString at: (x @ (y + 30)) textSizePx: '10px'.
 		graphHeight := value * maxHeight //  maxValue.
 		color := colorPalette randomPeek.
 		colorPalette remove: color.
+		colorPalette isEmpty ifTrue: [colorPalette := self colorPalette asOrderedCollection].
 		opacity := 0.5.
 "		graph := self drawRectangleAt: (x @ (y - graphHeight)) height: graphHeight width: width fillColor: self colorPalette randomPeek stroke: 'black'."
 		splitY := y - graphHeight.

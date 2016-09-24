@@ -40,6 +40,7 @@ drawJoin: joinDictionary verticalBarGraph: aDictionary at: aPoint maxHeight: max
 		graphHeight := value * maxHeight //  maxValue.
 		color := colorPalette randomPeek.
 		colorPalette remove: color.
+		colorPalette isEmpty ifTrue: [colorPalette := self colorPalette asOrderedCollection].
 		opacity := 0.5.
 		splitY := y.
 		(joinDictionary at: key) keysAndValuesDo: [:splitKey :splitValue | | splitText splitText2 innerHeight splitGraph |

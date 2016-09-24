@@ -35,7 +35,7 @@ drawInnerSplit: splitDictionary horizontalBarGraph: aDictionary at: aPoint maxWi
 
 	"draw rectangle bars"
 	y := y + 25.
-	aDictionary keysAndValuesDo: [:key :value | | text text2 graph graphHeight splitX color opacity |
+	aDictionary keysAndValuesDo: [:key :value | | text text2 graphHeight splitX color opacity |
 		text := self drawText: key at: (x - 25) @ y textSizePx: '10px'.
 		text2 := self drawText: value printString at: ((x - 25) @ (y + 10)) textSizePx: '10px'.
 		graphHeight := value * maxWidth //  maxValue.
@@ -44,6 +44,7 @@ drawInnerSplit: splitDictionary horizontalBarGraph: aDictionary at: aPoint maxWi
 		opacity := 1.
 		color := colorPalette randomPeek.
 		colorPalette remove: color.
+		colorPalette isEmpty ifTrue: [colorPalette := self colorPalette asOrderedCollection].
 		(splitDictionary at: key) keysAndValuesDo: [:splitKey :splitValue | | splitText splitText2 innerWidth splitGraph |
 			innerWidth := splitValue * maxWidth //  maxValue.
 			splitGraph := self drawRectangleAt: (splitX @ y) height: width width: innerWidth fillColor: color stroke: 'black'.
