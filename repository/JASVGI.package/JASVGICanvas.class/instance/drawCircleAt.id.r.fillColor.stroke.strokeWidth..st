@@ -1,4 +1,4 @@
-figures
+circles
 drawCircleAt: aPoint id: id r: radius fillColor: fillColor stroke: stroke strokeWidth: strokeWidth
 
 	^self draw: (JASVGITagCircle 

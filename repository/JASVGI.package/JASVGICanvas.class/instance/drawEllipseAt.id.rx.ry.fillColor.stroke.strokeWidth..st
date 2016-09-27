@@ -1,4 +1,4 @@
-figures
+circles
 drawEllipseAt: aPoint id: id rx: rx ry: ry fillColor: fillColor stroke: stroke strokeWidth: strokeWidth
 
 	^self draw: (JASVGITagEllipse

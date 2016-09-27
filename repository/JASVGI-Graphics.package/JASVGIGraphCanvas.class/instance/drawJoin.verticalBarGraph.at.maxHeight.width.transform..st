@@ -18,8 +18,8 @@ drawJoin: joinDictionary verticalBarGraph: aDictionary at: aPoint maxHeight: max
 		maxElem := eachDict asSortedCollection asSortedCollection last.
 		(maxElem > maxValue) ifTrue: [maxValue := maxElem]].
 	"draw graph axis Y only"
-	self addMarker: (JASVGITagMarker newArrowAt: 10@5 id: 'arrow' width: 10 height: 10).
-	self addMarker: (JASVGITagMarker newCircleAt: 5@5 id: 'circle' width: 10 height: 10).
+	self addMarker: (self markerClass newArrowAt: 10@5 id: 'arrow' width: 10 height: 10).
+	self addMarker: (self markerClass newCircleAt: 5@5 id: 'circle' width: 10 height: 10).
 	axis := self drawLineFrom: aPoint to: (aPoint x @ (aPoint y -  maxHeight - 20)).
 	self addFigure: axis toGroup: groupName.
 	axis setMarkerStart: 'circle'. 

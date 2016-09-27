@@ -1,4 +1,4 @@
-figures
+connectors
 connect: figureOne to: figureTwo
 
 	^self drawLineM: 

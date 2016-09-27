@@ -1,4 +1,4 @@
-figures
+curves
 drawCurve: points at: aPoint id: id widthPx: widthPx stroke: stroke fillColor: fillColor 
 	| curve translatedPoints |
 

@@ -15,8 +15,8 @@ drawInnerSplit: splitDictionary horizontalBarGraph: aDictionary at: aPoint maxWi
 	x := aPoint x.
 	maxValue := aDictionary asSortedCollection last.
 	"draw graph axis Y only"
-	self addMarker: (JASVGITagMarker newArrowAt: 10@5 id: 'arrow' width: 10 height: 10).
-	self addMarker: (JASVGITagMarker newCircleAt: 5@5 id: 'circle' width: 10 height: 10).
+	self addMarker: (self markerClass newArrowAt: 10@5 id: 'arrow' width: 10 height: 10).
+	self addMarker: (self markerClass newCircleAt: 5@5 id: 'circle' width: 10 height: 10).
 
 	axis := self drawLineFrom: x@y to: (x +  maxWidth + 20) @ y.
 	self addFigure: axis toGroup: groupName.
