@@ -3,7 +3,6 @@ drawVerticalCurveWithCircles: points r: r id: id stroke: stroke fillColor: fillC
 	|  translatedPoints transformString lastPoint axisX axisY marker maxYvalue axisText |
 
 	maxYvalue := (points asSortedCollection: [:a :b | a y >= b y]) first y + 30.
-
 	transformString := 'translate(20,', maxYvalue printString, ')'.
 	translatedPoints := points collect: [:each | each x @ each y negated].
 

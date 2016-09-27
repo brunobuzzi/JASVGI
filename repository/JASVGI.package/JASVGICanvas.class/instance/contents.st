@@ -1,5 +1,6 @@
 draw
 contents
+	"The receiver answer all it's contents. It produce a valid svg string which include receiver's figures."
 	
 	svgTag with: [
 		self tag: 'defs' with: [svgMarkers do: [:each | each drawOn: self]].

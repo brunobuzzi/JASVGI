@@ -1,7 +1,5 @@
 draw
 draw: aJASVGITagFigure in: groupNamed
-	"Store <aJASVGITagFigure> to be drawn"
-
-	"^svgObjects at: aJASVGITagFigure id put: aJASVGITagFigure"
+	"Store <aJASVGITagFigure> to be drawn in a group named <groupNamed>"
 
 	^aJASVGITagFigure drawOnListOf: self in: groupNamed

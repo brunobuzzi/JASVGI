@@ -1,5 +1,7 @@
 other
 addFigure: aJasvgiTagFigure toGroup: groupNamed
+	"The receiver the figure <aJasvgiTagFigure> to the group named <groupNamed>.
+	Groups <JASVGITagGroup> are used to group figures to apply the same transformation on all of them."
 
 	svgGroups 
 		at: groupNamed 

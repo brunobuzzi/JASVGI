@@ -1,5 +1,6 @@
 other
 getPointToConnectTo: aJasvgiTagElement
+	"Answer a point of the receiver to connect with the element <aJasvgiTagElement>"
 
 	((self x + self width + 10) < aJasvgiTagElement x) ifTrue: [^self getRightMiddlePoint].
 
