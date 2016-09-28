@@ -1,5 +1,7 @@
 curves with circles
-drawVerticalCurveWithCircles: points r: r id: id stroke: stroke fillColor: fillColor strokeWidth: strokeWidth
+drawVerticalCurveWithCircles: points r: r id: id strokeWidth: strokeWidth stroke: stroke fillColor: fillColor
+	"The receiver draw curve where at each <points> x value it draw a circle with radius <r> stroke <stroke> fill color <fillColor> and stroke witdth <strokeWidth>.
+	Then from each cirlcle draw a vertical line to X axis "
 	|  translatedPoints transformString lastPoint axisX axisY marker maxYvalue axisText |
 
 	maxYvalue := (points asSortedCollection: [:a :b | a y >= b y]) first y + 30.

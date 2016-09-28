@@ -34,7 +34,7 @@ drawVerticalBarGraph: aDictionary at: aPoint maxHeight: maxHeight width: width t
 		text := self drawText: key at: (x @ (y + 15)) textSizePx: '10px'.
 		text2 := self drawText: value printString at: (x @ (y + 30)) textSizePx: '10px'.
 		graphHeight := value * maxHeight //  maxValue.
-		graph := self drawRectangleAt: (x @ (y - graphHeight)) height: graphHeight width: width fillColor: self colorPalette randomPeek stroke: 'black'.
+		graph := self drawRectangleAt: (x @ (y - graphHeight)) width: width height: graphHeight stroke: 'black' fillColor: self colorPalette randomPeek.
 		self addFigure: graph toGroup: groupName.
 		self addFigure: text toGroup: groupName.
 		self addFigure: text2 toGroup: groupName.

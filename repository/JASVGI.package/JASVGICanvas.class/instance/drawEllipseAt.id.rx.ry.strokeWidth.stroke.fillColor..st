@@ -1,17 +1,19 @@
 circles
-drawCircleAt: aPoint id: id r: radius fillColor: fillColor stroke: stroke strokeWidth: strokeWidth
-	"The receiver draw a circle with:
-	radius: <radius> 
+drawEllipseAt: aPoint id: id rx: rx ry: ry strokeWidth: strokeWidth stroke: stroke fillColor: fillColor 
+	"The receiver draw a ellipse with:
+	radius x: <rx> 
+	radius y: <ry> 
 	at: <aPoint> 
 	figure id: <id>
 	fill color: <fillColor>
 	stroke color: <stroke>
 	stroke width: <strokeWidth>"
 
-	^self draw: (JASVGITagCircle 
+	^self draw: (JASVGITagEllipse
 						newAt: aPoint 
 						id: id 
-						r: radius
+						rx: rx 
+						ry: ry 
 						fillColor: fillColor 
 						stroke: stroke 
 						strokeWidth: strokeWidth)

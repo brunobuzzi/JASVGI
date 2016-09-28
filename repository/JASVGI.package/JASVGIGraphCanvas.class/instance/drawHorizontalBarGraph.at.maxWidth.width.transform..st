@@ -38,7 +38,7 @@ drawHorizontalBarGraph: aDictionary at: aPoint maxWidth: maxWidth width: width t
 		text := self drawText: key at: (x - 25) @ y textSizePx: '10px'.
 		text2 := self drawText: value printString at: ((x - 25) @ (y + 10)) textSizePx: '10px'.
 		graphHeight := value * maxWidth //  maxValue.
-		graph := self drawRectangleAt: (x @ y) height: width width: graphHeight fillColor: self colorPalette randomPeek stroke: 'black'.
+		graph := self drawRectangleAt: (x @ y) width: graphHeight height: width stroke: 'black' fillColor: self colorPalette randomPeek.
 		self addFigure: graph toGroup: groupName.
 		self addFigure: text toGroup: groupName.
 		self addFigure: text2 toGroup: groupName.

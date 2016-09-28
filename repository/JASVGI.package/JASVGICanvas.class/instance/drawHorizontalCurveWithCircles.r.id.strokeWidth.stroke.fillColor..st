@@ -1,5 +1,7 @@
 curves with circles
-drawHorizontalCurveWithCircles: points r: r id: id stroke: stroke fillColor: fillColor strokeWidth: strokeWidth
+drawHorizontalCurveWithCircles: points r: r id: id strokeWidth: strokeWidth stroke: stroke fillColor: fillColor
+	"The receiver draw curve where at each <points> x value it draw a circle with radius <r> stroke <stroke> fill color <fillColor> and stroke witdth <strokeWidth>.
+	Then from each cirlcle draw a vertical line to Y axis "
 	|  translatedPoints transformString lastPoint axisX axisY marker maxYvalue axisText yShift |
 
 	maxYvalue := (points asSortedCollection: [:a :b | a y >= b y]) first y + 30.
@@ -12,7 +14,7 @@ drawHorizontalCurveWithCircles: points r: r id: id stroke: stroke fillColor: fil
 	marker transform: transformString.
 
 	translatedPoints do: [:each | | point line textX textY |
-		point := self drawCircleAt: each r: r fillColor: fillColor stroke: stroke strokeWidth: strokeWidth.
+		point := self drawCircleAt: each r: r strokeWidth: strokeWidth stroke: stroke fillColor: fillColor.
 		line := self drawLineFrom: (0 @ each y) to: each.
 		textX := self drawText: each y printString at: (-20 @ each y).
 		textY := self drawText: each x printString at: ((each x + 10) @ each y + 5).

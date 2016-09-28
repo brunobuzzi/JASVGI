@@ -9,6 +9,6 @@ example5
 	add: 200@58; add: 220@100; add: 240@30; add: 260@20;
 	yourself.
 
-	canvas drawHorizontalCurveWithCircles: points stroke: 'black' fillColor: 'black' strokeWidth: '3px'.
+	canvas drawHorizontalCurveWithCircles: points strokeWidth: '3px' stroke: 'black' fillColor: 'black'.
 
 	^canvas contents

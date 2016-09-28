@@ -48,7 +48,7 @@ drawJoin: joinDictionary horizontalBarGraph: aDictionary at: aPoint maxWidth: ma
 		colorPalette isEmpty ifTrue: [colorPalette := self colorPalette asOrderedCollection].
 		(joinDictionary at: key) keysAndValuesDo: [:splitKey :splitValue | | splitText splitText2 innerWidth splitGraph |
 			innerWidth := splitValue * maxWidth //  maxValue.
-			splitGraph := self drawRectangleAt: (x @ y) height: width width: innerWidth fillColor: color stroke: 'black'.
+			splitGraph := self drawRectangleAt: (x @ y) width: innerWidth height: width stroke: 'black' fillColor: color.
 			splitGraph add: (JASVGIAttribute parent: splitGraph name: 'fill-opacity' value: opacity printString).
 			opacity := opacity - 0.2.
 			splitText := self drawText: splitKey at: ((x + innerWidth + 5) @ (y + 5)) textSizePx: '6px'.

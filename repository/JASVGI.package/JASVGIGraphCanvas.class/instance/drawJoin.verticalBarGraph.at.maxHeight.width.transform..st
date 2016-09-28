@@ -45,7 +45,7 @@ drawJoin: joinDictionary verticalBarGraph: aDictionary at: aPoint maxHeight: max
 		splitY := y.
 		(joinDictionary at: key) keysAndValuesDo: [:splitKey :splitValue | | splitText splitText2 innerHeight splitGraph |
 			innerHeight := splitValue * maxHeight //  maxValue.
-			splitGraph := self drawRectangleAt: (x @ (splitY - innerHeight)) height: innerHeight width: width fillColor: color stroke: 'black'.
+			splitGraph := self drawRectangleAt: (x @ (splitY - innerHeight)) width: width height: innerHeight stroke: 'black' fillColor: color.
 			splitGraph add: (JASVGIAttribute parent: splitGraph name: 'fill-opacity' value: opacity printString).
 			opacity := opacity + 0.2.
 			splitText := self drawText: splitKey at: ((x-5) @ (splitY - innerHeight - 10)) textSizePx: '6px'.

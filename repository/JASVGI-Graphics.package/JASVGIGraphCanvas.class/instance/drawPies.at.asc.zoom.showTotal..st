@@ -9,7 +9,7 @@ drawPies: collectionPercentage at: aPoint asc: aBoolean zoom: zoom showTotal: sh
 
 	showTotal 
 	ifTrue: [ | circle text |
-		circle := self drawCircleAt: aPoint r: (100 * zoom) fillColor: self colorPalette randomPeek stroke: 'black'.
+		circle := self drawCircleAt: aPoint r: (100 * zoom) stroke: 'black' fillColor: self colorPalette randomPeek.
 		text := self drawText: 'Total - 100%' at: aPoint.
 		self addFigure: circle toGroup: 'pies'.
 		self addFigure: text toGroup: 'pies'.
@@ -23,7 +23,7 @@ drawPies: collectionPercentage at: aPoint asc: aBoolean zoom: zoom showTotal: sh
 			key := collectionPercentage keyAtValue: eachValue.
 			radius := eachValue * zoom.
 			xShift := xShift + radius + 10.
-			circle := self drawCircleAt: (xShift @ aPoint y) r: radius fillColor: self colorPalette randomPeek stroke: 'black'.
+			circle := self drawCircleAt: (xShift @ aPoint y) r: radius stroke: 'black' fillColor: self colorPalette randomPeek.
 			text := self drawText: (key, ' ', eachValue printString, '%') at: ((xShift - radius + 10) @ yText).
 			self addFigure: circle toGroup: 'pies'.
 			self addFigure: text toGroup: 'pies'.
