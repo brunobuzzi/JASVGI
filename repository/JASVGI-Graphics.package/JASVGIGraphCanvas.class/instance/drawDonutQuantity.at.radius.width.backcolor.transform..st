@@ -7,6 +7,6 @@ drawDonutQuantity: quantityDictionary at: aPoint radius: radius width: width bac
 
 	pie := self drawPieQuantity: quantityDictionary at: aPoint radius: radius transform: transform.
 
-	donuts := self drawCircleAt: 0@0 r: width fillColor: backcolor stroke: 'black'.
+	donuts := self drawCircleAt: 0@0 r: width stroke: 'black' fillColor: backcolor.
 
 	donuts transform: transform.

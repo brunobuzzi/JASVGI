@@ -1,12 +1,11 @@
-curves with circles
-drawVerticalCurveWithCircles: points r: r id: id strokeWidth: strokeWidth stroke: stroke fillColor: fillColor
-	"The receiver draw curve where at each <points> x value it draw a circle with radius <r> stroke <stroke> fill color <fillColor> and stroke witdth <strokeWidth>.
-	Then from each cirlcle draw a vertical line to X axis "
+days
+drawVerticalCurveFor: days r: r id: id strokeWidth: strokeWidth stroke: stroke fillColor: fillColor
+	""
 	|  translatedPoints transformString lastPoint axisX axisY marker maxYvalue axisText |
 
-	maxYvalue := (points asSortedCollection: [:a :b | a y >= b y]) first y + 30.
+	maxYvalue := (days asSortedCollection: [:a :b | a y >= b y]) first y + 30.
 	transformString := 'translate(20,', maxYvalue printString, ')'.
-	translatedPoints := points collect: [:each | each x @ each y negated].
+	translatedPoints := days collect: [:each | each x @ each y negated].
 
 	marker := self addMarker: (self markerClass newArrowAt: 10@5 id: 'arrow' width: 10 height: 10).
 	marker transform: transformString.

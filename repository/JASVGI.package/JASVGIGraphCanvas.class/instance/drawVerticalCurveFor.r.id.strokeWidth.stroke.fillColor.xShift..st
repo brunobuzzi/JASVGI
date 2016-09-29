@@ -1,25 +1,27 @@
-curves with circles
-drawVerticalCurveWithCircles: points r: r id: id strokeWidth: strokeWidth stroke: stroke fillColor: fillColor
-	"The receiver draw curve where at each <points> x value it draw a circle with radius <r> stroke <stroke> fill color <fillColor> and stroke witdth <strokeWidth>.
-	Then from each cirlcle draw a vertical line to X axis "
-	|  translatedPoints transformString lastPoint axisX axisY marker maxYvalue axisText |
+days
+drawVerticalCurveFor: days r: r id: id strokeWidth: strokeWidth stroke: stroke fillColor: fillColor xShift: xShift
+	""
+	|  translatedPoints transformString lastPoint axisX axisY marker maxYvalue axisText previousPoint |
 
-	maxYvalue := (points asSortedCollection: [:a :b | a y >= b y]) first y + 30.
+	maxYvalue := (days asSortedCollection: [:a :b | a y >= b y]) first y + 30.
 	transformString := 'translate(20,', maxYvalue printString, ')'.
-	translatedPoints := points collect: [:each | each x @ each y negated].
+	translatedPoints := days collect: [:each | (each x * xShift) @ each y negated].
 
 	marker := self addMarker: (self markerClass newArrowAt: 10@5 id: 'arrow' width: 10 height: 10).
 	marker transform: transformString.
 
-	translatedPoints do: [:each | | point line textX textY |
+	previousPoint := 0@0.
+	translatedPoints do: [:each | | point line textX textY points |
 		point := self drawCircleAt: each r: r  strokeWidth: strokeWidth stroke: stroke fillColor: fillColor.
-		line := self drawLineFrom: (each x @ 0) to: each.
+		points := OrderedCollection with: previousPoint with: point.
 		textX := self drawText: each x abs printString at: ((each x - 5) @ 12).
 		textY := self drawText: each y abs printString at: ((each x - 5) @ (each y - 10)).
+		line := self drawCurve: points at: previousPoint.
+		previousPoint := point.
 		point transform: transformString.
-		line transform: transformString.
 		textY transform: transformString.
 		textX transform: transformString.
+		line transform: transformString.
 	].
 	lastPoint := translatedPoints last.
 
