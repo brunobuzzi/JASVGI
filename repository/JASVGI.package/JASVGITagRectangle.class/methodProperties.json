@@ -1,7 +1,10 @@
 {
 	"class" : {
-		"newAt:id:height:width:fillColor:stroke:" : "BrunoBB 09/07/2016 07:12",
-		"newRoundAt:id:height:width:fillColor:stroke:" : "BrunoBB 09/12/2016 10:30" },
+		"newAt:id:width:height:stroke:fillColor:" : "BrunoBB 10/01/2016 09:00",
+		"newAt:id:width:height:strokeWidth:stroke:fillColor:" : "BrunoBB 10/01/2016 08:59",
+		"newRoundAt:id:width:height:rx:ry:strokeWidth:stroke:fillColor:" : "BrunoBB 10/01/2016 09:04",
+		"newRoundAt:id:width:height:stroke:fillColor:" : "BrunoBB 10/01/2016 08:53",
+		"newRoundAt:id:width:height:strokeWidth:stroke:fillColor:" : "BrunoBB 10/01/2016 09:05" },
 	"instance" : {
 		"getBottomLine" : "BrunoBB 09/09/2016 09:43",
 		"getLeftLine" : "BrunoBB 09/09/2016 09:44",

@@ -1,5 +1,5 @@
 other
-newAt: aPoint id: id height: height width: width fillColor: fillColor stroke: stroke
+newAt: aPoint id: id width: width height: height strokeWidth: widthPx stroke: stroke fillColor: fillColor
 	| attributes |
 
 	attributes := OrderedCollection new 
@@ -9,6 +9,7 @@ newAt: aPoint id: id height: height width: width fillColor: fillColor stroke: st
 		add: (JASVGIAttribute parent: self name: 'height' value: height);
 		add: (JASVGIAttribute parent: self name: 'width' value: width);
 		add: (JASVGIAttribute parent: self name: 'stroke' value: stroke);
+		add: (JASVGIAttribute parent: self name: 'stroke-width' value: widthPx);
 		yourself.
 
 	^self newId: id withAll: attributes

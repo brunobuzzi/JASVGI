@@ -33,7 +33,7 @@ drawPieAngles: anglesDictionary at: aPoint radius: radius transform: transform m
 		self addFigure: line toGroup: groupName.
 		angleSum := angleSum + eachAngle.
 		startPoint := calculatedPoint.
-		rect := self drawRoundRectangleAt: labelsX - 15 @ labelsY height: 15 width: 15 fillColor: color stroke: 'black'.
+		rect := self drawRoundRectangleAt: labelsX - 15 @ labelsY width: 15 height: 15 stroke: 'black' fillColor: color.
 		self addFigure: rect toGroup: groupName.
 		percentage := (eachAngle * 100) / 360.
 		actualValue := ((maxValue * percentage) / 100) printShowingDecimalPlaces: 2.

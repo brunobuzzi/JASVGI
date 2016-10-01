@@ -30,7 +30,7 @@
 		"drawJoin:verticalBarGraph:at:maxHeight:width:transform:" : "BrunoBB 09/28/2016 08:28",
 		"drawPieAngles:at:radius:" : "BrunoBB 09/20/2016 09:15",
 		"drawPieAngles:at:radius:transform:" : "BrunoBB 09/24/2016 07:44",
-		"drawPieAngles:at:radius:transform:maxValue:" : "BrunoBB 09/24/2016 07:46",
+		"drawPieAngles:at:radius:transform:maxValue:" : "BrunoBB 10/01/2016 08:22",
 		"drawPiePercentage:at:radius:" : "BrunoBB 09/19/2016 13:36",
 		"drawPiePercentage:at:radius:transform:" : "BrunoBB 09/19/2016 15:56",
 		"drawPieQuantity:at:radius:transform:" : "BrunoBB 09/24/2016 07:44",
@@ -45,6 +45,6 @@
 		"drawVerticalCurveFrom:for:r:id:strokeWidth:stroke:fillColor:" : "BrunoBB 09/30/2016 08:04",
 		"drawVerticalCurveFrom:for:r:id:strokeWidth:stroke:fillColor:xShift:groupedBy:" : "BrunoBB 09/30/2016 08:01",
 		"drawWorkingDays:at:from:to:width:color:" : "BrunoBB 09/29/2016 11:00",
-		"drawWorkingDays:at:from:to:width:color:dayHasContent:" : "BrunoBB 09/29/2016 08:45",
+		"drawWorkingDays:at:from:to:width:color:dayHasContent:" : "BrunoBB 10/01/2016 11:18",
 		"getArcPointCoordinatesFor:radius:" : "BrunoBB 09/20/2016 09:37",
 		"getArcPointFor:angleSum:radius:" : "BrunoBB 09/20/2016 09:29" } }

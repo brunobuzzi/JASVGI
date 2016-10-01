@@ -1,4 +1,4 @@
 other
 styleAttributesNames
 
-	^#('fil' 'stroke' 'font-size' 'writing-mode' 'word-spacing' 'letter-spacing' 'kerning' 'text-anchor' 'font-family')
+	^#('fill' 'stroke' 'font-size' 'writing-mode' 'word-spacing' 'letter-spacing' 'kerning' 'text-anchor' 'font-family')

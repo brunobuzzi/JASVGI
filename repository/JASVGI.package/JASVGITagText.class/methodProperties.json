@@ -2,9 +2,10 @@
 	"class" : {
 		"defaultTextSize" : "BrunoBB 09/12/2016 09:34",
 		"newText:at:id:" : "BrunoBB 09/12/2016 09:33",
-		"newText:at:id:textSizePx:" : "BrunoBB 09/12/2016 10:14",
+		"newText:at:id:textSizePx:" : "BrunoBB 10/01/2016 10:49",
+		"newText:at:id:textSizePx:color:" : "BrunoBB 10/01/2016 10:49",
 		"newText:at:textSizePx:" : "BrunoBB 09/12/2016 14:09",
-		"styleAttributesNames" : "BrunoBB 09/12/2016 09:38" },
+		"styleAttributesNames" : "BrunoBB 10/01/2016 10:48" },
 	"instance" : {
 		"drawOn:" : "BrunoBB 09/06/2016 15:29",
 		"drawOnListOf:" : "BrunoBB 09/10/2016 12:51",
