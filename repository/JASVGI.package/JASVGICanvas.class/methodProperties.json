@@ -6,7 +6,10 @@
 		"example5" : "BrunoBB 09/28/2016 08:20",
 		"new" : "BrunoBB 09/11/2016 09:46",
 		"newWidth:height:" : "BrunoBB 09/21/2016 08:02",
-		"newWidth:height:backcolor:" : "BrunoBB 09/21/2016 08:02" },
+		"newWidth:height:backcolor:" : "BrunoBB 10/02/2016 09:50",
+		"newWidth:height:backcolor:overflow:" : "BrunoBB 10/02/2016 09:50",
+		"newWidth:height:backcolor:overflowX:overflowY:" : "BrunoBB 10/02/2016 09:55",
+		"newWidth:height:overflow:" : "BrunoBB 10/02/2016 09:50" },
 	"instance" : {
 		"addFigure:" : "BrunoBB 09/27/2016 15:28",
 		"addFigure:toGroup:" : "BrunoBB 09/27/2016 15:31",
