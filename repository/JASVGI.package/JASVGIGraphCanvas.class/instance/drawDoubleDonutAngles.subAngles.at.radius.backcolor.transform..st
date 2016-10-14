@@ -4,4 +4,4 @@ drawDoubleDonutAngles: anglesDictionary subAngles: subAngles at: aPoint radius: 
 	The total sum must be 360 and begin in 0 radian and anti clockwork.
 	The radius of the pie is defined by <radius>."
 
-	^self drawDoubleDonutAngles: anglesDictionary subAngles: subAngles showSub: true at: aPoint radius: radius backcolor: backcolor transform: transform
+	^self drawDoubleDonutAngles: anglesDictionary subAngles: subAngles at: aPoint radius: radius showSub: true backcolor: backcolor transform: transform

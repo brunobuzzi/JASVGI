@@ -17,7 +17,7 @@ getDictionaryOpacityColorFor: anglesDictionary subValues: subAnglesDictionary
 		opacity := 1.
 		[currentAngle > subValue] whileTrue: [
 			subValue := subValue + (subAnglesDictionary at: (subKeys at: index)).
-			opacity := opacity - 0.2.
+			opacity := opacity - 0.1.
 			opacityDictionary at: (subKeys at: index) put: opacity.
 			subColorDictionary at: (subKeys at: index) put: (colorsDictionary at: label).
 			index := index + 1.

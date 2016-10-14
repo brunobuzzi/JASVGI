@@ -19,8 +19,10 @@ at: 'mt-2' put: 30; at: 'mt-3' put: 10.
 		drawDoubleDonutAngles: dict 
 		subAngles: sd 
 		at: 10@10
-		radius: 80 
+		radius: 100 
+		subRadiusRatio: 1.4
+		showSub: true
 		backcolor: 'lightgray' 
-		transform: 'translate(150,150)'.
+		transform: 'translate(200,200)'.
 
 	^canvas contents
