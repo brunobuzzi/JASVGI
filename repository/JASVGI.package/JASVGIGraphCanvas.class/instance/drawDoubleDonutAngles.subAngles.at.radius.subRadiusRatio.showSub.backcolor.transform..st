@@ -17,7 +17,7 @@ drawDoubleDonutAngles: anglesDictionary subAngles: subAngles at: aPoint radius: 
 							radius: (radius * subRadiusRatio) 
 							labelsAt: (((radius * subRadiusRatio) + aPoint x + 150) @ (aPoint y - radius)) 
 							colors: subColorDictionary 
-							opacityDictionary: opacityDictionary 
+							opacity: opacityDictionary 
 							transform: transform 
 							maxValue: maxValue.
 					radius]
@@ -28,7 +28,7 @@ drawDoubleDonutAngles: anglesDictionary subAngles: subAngles at: aPoint radius: 
 			radius: radius 
 			labelsAt: (((radius * subRadiusRatio) + aPoint x + 40) @ (aPoint y - radius)) 
 			colors: colorDictionary 
-			opacityDictionary: opacityDictionary 
+			opacity: opacityDictionary 
 			transform: transform 
 			maxValue: maxValue.
 

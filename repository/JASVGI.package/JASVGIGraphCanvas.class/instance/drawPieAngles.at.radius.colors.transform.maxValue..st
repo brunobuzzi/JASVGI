@@ -8,6 +8,6 @@ drawPieAngles: anglesDictionary at: aPoint radius: radius colors: colorsDictiona
 			at: aPoint 
 			radius: radius 
 			colors: colorsDictionary 
-			opacityDictionary: Dictionary new
+			opacity: Dictionary new
 			transform: transform 
 			maxValue: maxValue
