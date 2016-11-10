@@ -5,6 +5,7 @@ drawPieQuantity: quantityDictionary at: aPoint radius: radius transform: transfo
 	| totalValue |
 
 	totalValue := quantityDictionary inject: 0 into: [:sum :each | sum + each].
+	(totalValue = 0) ifTrue: [^self]. 
 
 	^self 
 		drawPieAngles: (quantityDictionary collect: [:value | (value * 360) / totalValue]) "convert percentaje to pie angle"
