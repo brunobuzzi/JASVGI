@@ -37,7 +37,7 @@ drawVerticalBarGraph: aDictionary at: aPoint maxHeight: maxHeight width: width t
         textShift := switch ifTrue: [30] ifFalse: [55].
         text2 := self drawText: value printString at: (x @ (y + textShift)) textSizePx: '10px'.
         switch := switch not.
-        graphHeight := value * maxHeight //  maxValue.
+        graphHeight := value * maxHeight //  (maxValue max: 0.1) .
         graph := self drawRectangleAt: (x @ (y - graphHeight)) width: width height: graphHeight stroke: 'black' fillColor: self colorPalette randomPeek.
         self addFigure: graph toGroup: groupName.
         self addFigure: text toGroup: groupName.
