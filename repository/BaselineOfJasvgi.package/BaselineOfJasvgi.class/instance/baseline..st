@@ -17,7 +17,7 @@ baseline: spec
 				repository: 'http://www.smalltalkhub.com/mc/PharoExtras/XPath/main'].
 		spec project: 'XMLWriter' with: [
 			spec className: 'ConfigurationOfXMLWriter';
-				versionString: #stable;
+				versionString: '2.7.2';
 				file: 'ConfigurationOfXMLWriter';
 				repository: 'http://smalltalkhub.com/mc/PharoExtras/XMLWriter/main';
 				loads: #('Core').
