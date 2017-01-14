@@ -6,7 +6,7 @@ drawWorkingDays: workingDays at: aPoint from: startDate to: endDate width: width
 
 	weekCounter := 0.
 	sortedWorkingDays := workingDays asSortedCollection.
-	maxValue :=  sortedWorkingDays last.
+	maxValue :=  sortedWorkingDays ifEmpty: [0.1] ifNotEmpty: [:collection | collection last].
 	groupName := 'verticalWorkingDay'.
 	group := JASVGITagGroup newNamed: groupName.
 	group transform: 'translate(', aPoint x printString, ',', aPoint y printString, ')'.
@@ -40,9 +40,11 @@ drawWorkingDays: workingDays at: aPoint from: startDate to: endDate width: width
 	].
 		currentPosition := aPoint x @ (aPoint y + (7 * width) + 50). 
 		scaleRect := self drawRoundRectangleAt: currentPosition width: width height: width stroke: 'darkgreen' fillColor: 'darkgreen'.
-		scaleOpacity := ((sortedWorkingDays first / maxValue) max: 0.05) asFloat.
+		scaleOpacity := (((sortedWorkingDays ifEmpty: [0.1] ifNotEmpty: [:collection | collection first]) / maxValue) max: 0.05) asFloat.
 		scaleRect add: (JASVGIAttribute parent: scaleRect name: 'opacity' value: scaleOpacity).
-		scaleText := self drawText: sortedWorkingDays first printString at: ((currentPosition x + 5) @ (currentPosition y + 12)) color: 'green'.
+		scaleText := self drawText: (sortedWorkingDays ifEmpty: [0.1] ifNotEmpty: [:collection | collection first]) printString 
+								at: ((currentPosition x + 5) @ (currentPosition y + 12)) 
+								color: 'green'.
 		self addFigure: scaleRect toGroup: groupName.
 		self addFigure: scaleText toGroup: groupName.
 
