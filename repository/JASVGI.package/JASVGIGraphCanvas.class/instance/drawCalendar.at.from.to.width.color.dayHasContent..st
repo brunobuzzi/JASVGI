@@ -2,11 +2,10 @@ days
 drawCalendar: calendarDays at: aPoint from: startDate to: endDate width: width color: color dayHasContent: aBoolean
 	"The receiver draw a vertical working day graph from <startDate> to <endDate> where <workingDays> dictionary key's is the day number and value is the color intensity.
 	The width of each rectangle day is <width> and color is <color>"
-	| numberOfDays group groupName currentPosition weekCounter maxValue monthName sortedWorkingDays dayColor |
+	| numberOfDays group groupName currentPosition weekCounter monthName sortedWorkingDays dayColor |
 
 	weekCounter := 0.
 	sortedWorkingDays := calendarDays asSortedCollection.
-	maxValue :=  sortedWorkingDays ifEmpty: [0.1] ifNotEmpty: [:collection | collection last].
 	groupName := 'verticalWorkingDay'.
 	group := JASVGITagGroup newNamed: groupName.
 	group transform: 'translate(', aPoint x printString, ',', aPoint y printString, ')'.
@@ -14,7 +13,7 @@ drawCalendar: calendarDays at: aPoint from: startDate to: endDate width: width c
 	numberOfDays := endDate asDays - startDate asDays.
 	currentPosition := aPoint.
 
-	0 to: (numberOfDays - 1) do: [:dayIndex | | value rectDay opacity currentDate |
+	0 to: numberOfDays do: [:dayIndex | | value rectDay opacity currentDate |
 		currentDate := startDate addDays: dayIndex.
 		(currentDate monthName = monthName) 
 		ifFalse: [monthName := currentDate monthName. 
@@ -31,7 +30,7 @@ drawCalendar: calendarDays at: aPoint from: startDate to: endDate width: width c
 		(aBoolean and: [value ~= 0]) 
 		ifTrue: [self drawText: currentDate dayOfMonth printString at: ((currentPosition x + 5) @ (currentPosition y + 12)) textSizePx: '10px' color: 'white']. 
 		"draw the named of the days"
-		((currentDate month = 1) and: [weekCounter odd])  "is the first column ?"
+		((currentDate month = 1 or:[(currentDate month = 7)]) and: [weekCounter odd])  "is the first column ?"
 		ifTrue: [self drawText: (currentDate dayOfWeekName first: 3) at: (aPoint x @ (currentPosition y + 12))]. 
 		(weekCounter = 7)
 		ifTrue: [weekCounter := 0.
