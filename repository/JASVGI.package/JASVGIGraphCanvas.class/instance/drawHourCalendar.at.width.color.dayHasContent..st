@@ -12,7 +12,7 @@ drawHourCalendar: calendar at: aPoint width: width color: color dayHasContent: a
 
 	0 to: 11 do: [:hourIndex | | value rectHour currentTime |
 		currentTime := Time fromString: hourIndex printString ,':00'.
-		hourColor := (calendar timeIntervalExistFrom: currentTime to: (currentTime addSeconds: (60*60))) ifTrue: ['brown'] ifFalse: ['green'].
+		hourColor := (calendar timeIntervalExistFrom: currentTime to: (currentTime addSeconds: (60*60) - 1)) ifTrue: ['brown'] ifFalse: ['green'].
 		rectHour := self drawRoundRectangleAt: currentPosition width: width height: width rx: 5 ry: 5 strokeWidth: '1px' stroke: 'red' fillColor: hourColor.
 		rectHour add: (JASVGIAttribute parent: rectHour name: 'opacity' value: '1').
 		self addFigure: rectHour toGroup: groupName.
@@ -25,7 +25,7 @@ drawHourCalendar: calendar at: aPoint width: width color: color dayHasContent: a
 	currentPosition := aPoint x @ (currentPosition y + 100).
 	12 to: 23 do: [:hourIndex | | value rectHour currentTime |
 		currentTime := Time fromString: hourIndex printString ,':00'.
-		hourColor := (calendar timeIntervalExistFrom: currentTime to: (currentTime addSeconds: (60*60))) ifTrue: ['brown'] ifFalse: ['green'].
+		hourColor := (calendar timeIntervalExistFrom: currentTime to: (currentTime addSeconds: (60*60) - 1)) ifTrue: ['brown'] ifFalse: ['green'].
 		rectHour := self drawRoundRectangleAt: currentPosition width: width height: width rx: 5 ry: 5 strokeWidth: '1px' stroke: 'red' fillColor: hourColor.
 		rectHour add: (JASVGIAttribute parent: rectHour name: 'opacity' value: '1').
 		self addFigure: rectHour toGroup: groupName.

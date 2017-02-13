@@ -30,7 +30,7 @@ drawCalendar: calendarDays at: aPoint from: startDate to: endDate width: width c
 		(aBoolean and: [value ~= 0]) 
 		ifTrue: [self drawText: currentDate dayOfMonth printString at: ((currentPosition x + 5) @ (currentPosition y + 12)) textSizePx: '10px' color: 'white']. 
 		"draw the named of the days"
-		((currentDate month = 1 or:[(currentDate month = 7)]) and: [weekCounter odd])  "is the first column ?"
+		((currentDate month = 1 or:[(currentDate month = 7)]) "and: [weekCounter odd]")  "is the first column ?"
 		ifTrue: [self drawText: (currentDate dayOfWeekName first: 3) at: (aPoint x @ (currentPosition y + 12))]. 
 		(weekCounter = 7)
 		ifTrue: [weekCounter := 0.

@@ -18,7 +18,7 @@
 		"example9" : "BrunoBB 09/21/2016 16:32" },
 	"instance" : {
 		"colorPalette" : "BrunoBB 10/19/2016 10:18",
-		"drawCalendar:at:from:to:width:color:dayHasContent:" : "BrunoBB 02/08/2017 12:08",
+		"drawCalendar:at:from:to:width:color:dayHasContent:" : "BrunoBB 02/13/2017 15:10",
 		"drawDonutAngles:at:radius:width:backcolor:transform:" : "BrunoBB 09/29/2016 07:11",
 		"drawDonutPercentage:at:radius:width:backcolor:transform:" : "BrunoBB 09/23/2016 05:08",
 		"drawDonutQuantity:at:radius:width:backcolor:transform:" : "BrunoBB 09/29/2016 07:09",
@@ -30,7 +30,7 @@
 		"drawDoublePieAngles:subAngles:at:radius:transform:maxValue:" : "BrunoBB 10/10/2016 11:09",
 		"drawHorizontalBarGraph:at:maxWidth:width:" : "BrunoBB 09/20/2016 04:09",
 		"drawHorizontalBarGraph:at:maxWidth:width:transform:" : "BrunoBB 09/28/2016 08:26",
-		"drawHourCalendar:at:width:color:dayHasContent:" : "BrunoBB 02/08/2017 14:21",
+		"drawHourCalendar:at:width:color:dayHasContent:" : "BrunoBB 02/13/2017 11:50",
 		"drawInnerSplit:horizontalBarGraph:at:maxWidth:width:" : "BrunoBB 09/21/2016 16:10",
 		"drawInnerSplit:horizontalBarGraph:at:maxWidth:width:transform:" : "BrunoBB 09/28/2016 08:27",
 		"drawInnerSplit:verticalBarGraph:at:maxHeight:width:" : "BrunoBB 09/21/2016 14:10",
