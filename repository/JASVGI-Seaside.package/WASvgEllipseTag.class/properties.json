@@ -1,0 +1,14 @@
+{
+	"category" : "JASVGI-Seaside",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WASvgEllipseTag",
+	"pools" : [
+		 ],
+	"super" : "WASvgBasicFigureTag",
+	"type" : "normal" }
