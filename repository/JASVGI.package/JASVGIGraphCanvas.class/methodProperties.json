@@ -31,6 +31,7 @@
 		"drawHorizontalBarGraph:at:maxWidth:width:" : "BrunoBB 09/20/2016 04:09",
 		"drawHorizontalBarGraph:at:maxWidth:width:transform:" : "BrunoBB 09/28/2016 08:26",
 		"drawHourCalendar:at:width:color:dayHasContent:" : "BrunoBB 02/13/2017 11:50",
+		"drawHourCalendarOn:calendar:at:width:color:dayHasContent:" : "BrunoBB 02/15/2017 11:30",
 		"drawInnerSplit:horizontalBarGraph:at:maxWidth:width:" : "BrunoBB 09/21/2016 16:10",
 		"drawInnerSplit:horizontalBarGraph:at:maxWidth:width:transform:" : "BrunoBB 09/28/2016 08:27",
 		"drawInnerSplit:verticalBarGraph:at:maxHeight:width:" : "BrunoBB 09/21/2016 14:10",
