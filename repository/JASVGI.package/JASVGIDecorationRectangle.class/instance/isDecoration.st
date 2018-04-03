@@ -1,0 +1,4 @@
+other
+isDecoration
+
+	^true

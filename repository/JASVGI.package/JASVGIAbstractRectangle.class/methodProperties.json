@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"newAt:id:width:height:stroke:fillColor:" : "brunobb 04/03/2018 07:20",
+		"newAt:id:width:height:strokeWidth:stroke:fillColor:" : "brunobb 04/03/2018 07:20",
+		"newRoundAt:id:width:height:rx:ry:strokeWidth:stroke:fillColor:" : "brunobb 04/03/2018 07:20",
+		"newRoundAt:id:width:height:stroke:fillColor:" : "brunobb 04/03/2018 07:20",
+		"newRoundAt:id:width:height:strokeWidth:stroke:fillColor:" : "brunobb 04/03/2018 07:20" },
+	"instance" : {
+		"getBottomLine" : "brunobb 04/03/2018 07:12",
+		"getLeftLine" : "brunobb 04/03/2018 07:12",
+		"getRightLine" : "brunobb 04/03/2018 07:12",
+		"getTopLine" : "brunobb 04/03/2018 07:12",
+		"svgTag" : "brunobb 04/03/2018 07:12" } }
