@@ -1,0 +1,4 @@
+other
+isText
+
+	^false

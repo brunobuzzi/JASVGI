@@ -8,8 +8,10 @@ figuresDo: aBlock
 	"rectangle representing Bpm Tasks are render first -the next figures will be render on the these tasks-"
 	figuresInRenderOrder := OrderedCollection withAll: (allFigures select: [:each | each isRectangle]).
 
-	figuresInRenderOrder addAll: (allFigures reject: [:each | each isRectangle or:[each isDecoration]]).
+	figuresInRenderOrder addAll: (allFigures reject: [:each | each isRectangle or:[each isDecoration or:[each isText]]]).
 
 	figuresInRenderOrder addAll: (allFigures select: [:each | each isDecoration]).
+
+	figuresInRenderOrder addAll: (allFigures select: [:each | each isText]).
 
 	^figuresInRenderOrder do: aBlock
