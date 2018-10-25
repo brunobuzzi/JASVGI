@@ -1,6 +1,6 @@
 other
 getAttributeValue
 
-	(attributeValue class == String) ifFalse: [^attributeValue printString].
+	(attributeValue isOctetString) ifFalse: [^attributeValue printString].
 
 	^attributeValue
