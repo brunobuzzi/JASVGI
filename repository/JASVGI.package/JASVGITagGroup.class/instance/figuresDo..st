@@ -12,6 +12,8 @@ figuresDo: aBlock
 
 	figuresInRenderOrder addAll: (allFigures select: [:each | each isDecoration]).
 
+	figuresInRenderOrder addAll: (allFigures select: [:each | each isLine]).
+
 	figuresInRenderOrder addAll: (allFigures select: [:each | each isText]).
 
 	^figuresInRenderOrder do: aBlock
