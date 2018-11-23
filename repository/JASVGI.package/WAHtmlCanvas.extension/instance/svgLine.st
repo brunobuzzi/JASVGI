@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 svgLine
 
 	^self tag: 'line'

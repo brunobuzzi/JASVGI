@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 svgPoint
 
 	^self tag: 'point'

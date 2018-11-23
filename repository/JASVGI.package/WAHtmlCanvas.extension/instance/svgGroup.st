@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 svgGroup
 
 	^self brush: WASvgGroupTag new

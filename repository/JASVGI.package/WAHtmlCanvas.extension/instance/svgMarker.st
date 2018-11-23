@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 svgMarker
 
 	^self brush: WASvgMarkerTag new

@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 svgPath
 
 	^self brush: WASvgPathTag new

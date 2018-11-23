@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 svgRectangle
 
 	^self brush: WASvgRectangleTag new

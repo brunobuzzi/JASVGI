@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 drawHourCalendar: calendar at: aPoint width: width color: color dayHasContent: aBoolean parent: sewafWebComposite actionMethod: actionMethod
 	"The receiver draw a vertical working day graph from <startDate> to <endDate> where <workingDays> dictionary key's is the day number and value is the color intensity.
 	The width of each rectangle day is <width> and color is <color>"

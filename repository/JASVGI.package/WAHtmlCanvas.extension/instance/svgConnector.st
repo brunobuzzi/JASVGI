@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 svgConnector
 
 	^self brush: WASvgConnectorTag new

@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 drawText: aString at: aPoint 
 	"The receiver draw the string <aString> at <aPoint>"
 

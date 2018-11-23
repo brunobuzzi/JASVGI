@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 svgText: aBlock
 
 	^self svgText with: aBlock

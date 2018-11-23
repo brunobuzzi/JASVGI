@@ -23,7 +23,10 @@ baseline: spec
 				loads: #('Core').
 				].
 
-		spec package: 'JASVGI' with: [spec requires: #('XMLWriter' 'XPath' 'XMLParser')].
+		spec baseline: 'Seaside3' with: [
+			spec repository: 'github://GsDevKit/Seaside31:gs_master/repository'].
+
+		spec package: 'JASVGI' with: [spec requires: #('Seaside3' 'XMLWriter' 'XPath' 'XMLParser')].
 
 		spec
 			group: 'default' with: #('JASVGI').

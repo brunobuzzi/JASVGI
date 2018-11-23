@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 svgText
 
 	^self tag: 'text'

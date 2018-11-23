@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 svgCircle
 
 	^self brush: WASvgCircleTag new

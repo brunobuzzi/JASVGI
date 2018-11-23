@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 drawLinkText: aString callback: aBlock at: aPoint id: id textSizePx: textSizePx color: color
 	"The receiver draw the string <aString> at <aPoint> with id <id> and text size <textSizePx> "
 

@@ -1,4 +1,4 @@
-*JASVGI-Seaside
+*JASVGI
 svgCircle: aBlock
 
 	self svgCircle with: aBlock
