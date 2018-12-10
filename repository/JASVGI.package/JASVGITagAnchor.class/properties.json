@@ -1,0 +1,16 @@
+{
+	"category" : "JASVGI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"svgText",
+		"url",
+		"inNewTab" ],
+	"name" : "JASVGITagAnchor",
+	"pools" : [
+		 ],
+	"super" : "JASVGITagElement",
+	"type" : "normal" }
