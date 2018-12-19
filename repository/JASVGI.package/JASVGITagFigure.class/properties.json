@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"connectorPoints" ],
+		"connectorPoints",
+		"tooltip" ],
 	"name" : "JASVGITagFigure",
 	"pools" : [
 		 ],

@@ -1,16 +1,18 @@
 {
 	"class" : {
-		"styleAttributesNames" : "BrunoBB 09/19/2016 09:50" },
+		"styleAttributesNames" : "brunobb 12/19/2018 12:08" },
 	"instance" : {
-		"addConnectorPoint:" : "BrunoBB 09/09/2016 09:28",
-		"connectorPoints" : "BrunoBB 09/09/2016 04:38",
-		"connectorPoints:" : "BrunoBB 09/09/2016 04:38",
-		"drawOn:" : "BrunoBB 09/09/2016 05:06",
-		"drawOnListOf:" : "BrunoBB 09/10/2016 12:50",
-		"drawOnListOf:in:" : "BrunoBB 09/11/2016 11:29",
-		"getBottomMiddlePoint" : "BrunoBB 09/10/2016 05:59",
-		"getLeftMiddlePoint" : "BrunoBB 09/10/2016 05:59",
-		"getPointToConnectTo:" : "BrunoBB 09/27/2016 15:39",
-		"getRightMiddlePoint" : "BrunoBB 09/10/2016 05:59",
-		"getTopMiddlePoint" : "BrunoBB 09/10/2016 05:59",
-		"initialize" : "BrunoBB 09/09/2016 04:39" } }
+		"addConnectorPoint:" : "brunobb 12/19/2018 12:08",
+		"connectorPoints" : "brunobb 12/19/2018 12:08",
+		"connectorPoints:" : "brunobb 12/19/2018 12:08",
+		"drawOn:" : "brunobb 12/19/2018 12:08",
+		"drawOnListOf:" : "brunobb 12/19/2018 12:08",
+		"drawOnListOf:in:" : "brunobb 12/19/2018 12:08",
+		"getBottomMiddlePoint" : "brunobb 12/19/2018 12:08",
+		"getLeftMiddlePoint" : "brunobb 12/19/2018 12:08",
+		"getPointToConnectTo:" : "brunobb 12/19/2018 12:08",
+		"getRightMiddlePoint" : "brunobb 12/19/2018 12:08",
+		"getTopMiddlePoint" : "brunobb 12/19/2018 12:08",
+		"initialize" : "brunobb 12/19/2018 12:08",
+		"tooltip" : "brunobb 12/19/2018 12:08",
+		"tooltip:" : "brunobb 12/19/2018 12:08" } }
