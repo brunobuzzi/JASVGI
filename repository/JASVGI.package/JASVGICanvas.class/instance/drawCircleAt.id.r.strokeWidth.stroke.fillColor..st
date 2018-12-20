@@ -8,10 +8,4 @@ drawCircleAt: aPoint id: id r: radius strokeWidth: strokeWidth stroke: stroke fi
 	stroke color: <stroke>
 	stroke width: <strokeWidth>"
 
-	^self draw: (JASVGITagCircle 
-						newAt: aPoint 
-						id: id 
-						r: radius
-						fillColor: fillColor 
-						stroke: stroke 
-						strokeWidth: strokeWidth)
+	^self drawCircleAt: aPoint id: id r: radius strokeWidth: strokeWidth stroke: stroke fillColor: fillColor tooltip: nil

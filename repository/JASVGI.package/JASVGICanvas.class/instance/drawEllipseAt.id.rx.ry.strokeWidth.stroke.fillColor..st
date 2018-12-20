@@ -9,11 +9,4 @@ drawEllipseAt: aPoint id: id rx: rx ry: ry strokeWidth: strokeWidth stroke: stro
 	stroke color: <stroke>
 	stroke width: <strokeWidth>"
 
-	^self draw: (JASVGITagEllipse
-						newAt: aPoint 
-						id: id 
-						rx: rx 
-						ry: ry 
-						fillColor: fillColor 
-						stroke: stroke 
-						strokeWidth: strokeWidth)
+	^self drawEllipseAt: aPoint id: id rx: rx ry: ry strokeWidth: strokeWidth stroke: stroke fillColor: fillColor tooltip: nil
