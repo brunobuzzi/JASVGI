@@ -1,4 +1,4 @@
-other
+geometry
 addConnectorPoint: aJasvgiTagFigure
 	"NOT Supported by the standart "
 

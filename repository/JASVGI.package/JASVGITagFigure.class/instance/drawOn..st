@@ -1,4 +1,4 @@
-other
+draw
 drawOn: aJASVGICanvas
 
 	aJASVGICanvas 

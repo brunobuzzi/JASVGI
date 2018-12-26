@@ -1,4 +1,4 @@
-other
+geometry
 getPointToConnectTo: aJasvgiTagElement
 	"Answer a point of the receiver to connect with the element <aJasvgiTagElement>"
 

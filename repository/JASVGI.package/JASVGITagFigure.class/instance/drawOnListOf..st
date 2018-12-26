@@ -1,4 +1,4 @@
-other
+draw
 drawOnListOf: aJasvgiCanvas
 
 	^aJasvgiCanvas addFigure: self
