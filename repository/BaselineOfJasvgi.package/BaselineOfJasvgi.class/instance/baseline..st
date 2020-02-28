@@ -24,7 +24,7 @@ baseline: spec
 				].
 
 		spec baseline: 'Seaside3' with: [
-			spec repository: 'github://GsDevKit/Seaside31:gs_master/repository'].
+			spec repository: 'github://SeasideSt/Seaside:master/repository'].
 
 		spec package: 'JASVGI' with: [spec requires: #('Seaside3' 'XMLWriter' 'XPath' 'XMLParser')].
 
